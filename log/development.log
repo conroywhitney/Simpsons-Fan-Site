@@ -452,3 +452,216 @@ Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:19:35) [GET]
 Rendering template within layouts/videos
 Rendering videos/show
 Completed in 69ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:38:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:39:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:40:09) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #16 of app/views/layouts/videos.html.erb:
+13:   <title>Videos: <%= controller.action_name %></title>
+14:   <%= stylesheet_link_tag 'scaffold' %>
+15: 
+16:     <meta property="og:title" content="The Simpsons - <%= @video.title %> (<%= @video.season_label_short %>)"/>
+17:     <meta property="og:type" content="tv_show"/>
+18:     <meta property="og:url" content=""/>
+19:     <meta property="og:image" content=""/>
+
+    app/views/layouts/videos.html.erb:16
+    app/controllers/videos_controller.rb:7:in `index'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:44:01) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:44:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:47:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:47:32) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:49:59) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:50:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 73ms (View: 67, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:51:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:51:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:52:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:52:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:54:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:06:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 74ms (View: 68, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+
+ActionView::TemplateError (undefined method `rewrite' for "http://watch-the-simpsons-online.com":String) on line #42 of app/views/videos/show.html.erb:
+39: 
+40: <br /><br />
+41: 
+42: <%= link_to 'Edit', edit_video_path(@video) %> |
+43: <%= link_to 'Back', videos_path %>
+
+    (eval):17:in `edit_video_path'
+    app/views/videos/show.html.erb:42
+    app/controllers/videos_controller.rb:21:in `show'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+
+ActionView::TemplateError (undefined method `rewrite' for "http://watch-the-simpsons-online.com":String) on line #42 of app/views/videos/show.html.erb:
+39: 
+40: <br /><br />
+41: 
+42: <%= link_to 'Edit', edit_video_path(@video) %> |
+43: <%= link_to 'Back', videos_path %>
+
+    (eval):17:in `edit_video_path'
+    app/views/videos/show.html.erb:42
+    app/controllers/videos_controller.rb:21:in `show'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]

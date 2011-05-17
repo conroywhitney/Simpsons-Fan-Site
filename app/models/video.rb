@@ -7,4 +7,8 @@ class Video < ActiveRecord::Base
   def season_label
     return "Season #{self.season} - Episode #{self.episode}"
   end
+
+  def season_label_short
+    return "S#{self.season}E#{self.episode}"
+  end
 end

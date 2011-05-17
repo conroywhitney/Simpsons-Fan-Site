@@ -1,6 +1,18 @@
 
+<% content_for :head_og do %>
+    <meta property="og:title" content="The Simpsons - <%= @video.title %> (<%= @video.season_label_short %>)"/>
+    <meta property="og:type" content="tv_show"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="The Simpsons"/>
+    <meta property="og:description" content="<%= @video.summary %>"/>
+<% end %>
+
 <h1>The Simpsons - <%= @video.season_label %></h1>
 <h2><%= @video.title %></h2>
+
+<fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
+
 <h3><%= @video.summary %></h3>
 
 <object width="530"
@@ -17,6 +29,13 @@
     <param name="allowfullscreen" value="true" />
     <param name="pluginspage" value="http://www.macromedia.com/go/getflashplayer" />
 </object>
+
+
+<h3>Related Videos</h3>
+<fb:recommendations site="<%= @url %>" width="300" height="300" header="false" border_color="#FFFFFF"></fb:recommendations>
+
+<h3>Comments</h3>
+<fb:comments xid="<%= @url %>" numposts="10" width="600" publish_feed="true"></fb:comments>
 
 <br /><br />
 
