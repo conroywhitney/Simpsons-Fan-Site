@@ -1,0 +1,18 @@
+<h1>The Simpsons Season <%= @season %> Full Episodes</h1>
+
+
+<% if @episodes.nil? %>
+    <h2>No Episodes Found</h2>
+<% else %>
+    <ul>
+    <% @episodes.each do |episode| %>
+        <li class="episode">
+          <%= link_to "Season #{episode.season} Episode #{episode.episode}", :controller => "videos", :action => "show", :id => episode %>
+          <br />
+          <a href="<%= url_for :controller => "videos", :action => "show", :id => episode %>"><img src="<%= episode.thumbnail %>" width="150" /></a>
+          <br />
+          <%= link_to "#{episode.title}", :controller => "videos", :action => "show", :id => episode %>
+        </li>
+    <% end %>
+    </ul>
+<% end %>

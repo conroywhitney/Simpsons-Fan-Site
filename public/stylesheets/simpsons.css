@@ -1,0 +1,19 @@
+@font-face {
+	font-family: simpson_font;
+	src: url('simpson_font.ttf');
+}
+
+body {
+    font-family:simpson_font;
+}
+
+li.episode {
+    display:block;
+    text-align:center;
+    float:left;
+    margin:10px;
+}
+
+li.episode img {
+    margin:15px;
+}

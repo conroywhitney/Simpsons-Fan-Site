@@ -1,0 +1,5 @@
+<ul>
+<% (1..22).each do |i| %>
+    <li><%= link_to "Season #{i} Full Simpsons Episodes", :controller => "season", :action => "show", :season => i %></li>
+<% end %>
+</ul>
