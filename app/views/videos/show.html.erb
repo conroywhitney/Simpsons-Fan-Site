@@ -1,0 +1,24 @@
+
+<h1>The Simpsons - <%= @video.season_label %></h1>
+<h2><%= @video.title %></h2>
+<h3><%= @video.summary %></h3>
+
+<object width="530"
+        height="410"
+        id="video"
+        type="application/x-shockwave-flash"
+        data="<%= @video.source %>">
+    <param name="movie" value="<%= @video.source %>"/>
+    <param name="quality" value="high" />
+    <param name="scale" value="noorder" />
+    <param name="wmode" value="transparent" />
+    <param name="allowscriptaccess" value="never" />
+    <param name="allownetworking" value="internal" />
+    <param name="allowfullscreen" value="true" />
+    <param name="pluginspage" value="http://www.macromedia.com/go/getflashplayer" />
+</object>
+
+<br /><br />
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>

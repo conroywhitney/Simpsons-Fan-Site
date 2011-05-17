@@ -1,0 +1,13 @@
+<h1>The Simpsons Episodes</h1>
+
+<ul>
+
+<% @videos.each do |video| %>
+    <li><%= link_to "#{video.season_label} - #{video.title}", video %></li>
+<% end %>
+
+</ul>
+
+<br />
+
+<%= link_to 'New video', new_video_path %>

@@ -1,0 +1,454 @@
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:54:07) [GET]
+  [4;36;1mVideo Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: videos: SELECT * FROM "videos" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: videos: SELECT * FROM "videos" ):
+  app/controllers/videos_controller.rb:5:in `index'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateVideos (20110517165229)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVideos (20110517165229)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "season" varchar(255), "episode" varchar(255), "url" varchar(255), "thumbnail" varchar(255), "summary" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110517165229')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("videos")[0m
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:58:41) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#new (for 127.0.0.1 at 2011-05-17 12:58:43) [GET]
+Rendering template within layouts/videos
+Rendering videos/new
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/videos/new]
+
+
+Processing VideosController#create (for 127.0.0.1 at 2011-05-17 12:58:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY="}
+  [4;36;1mVideo Create (7.1ms)[0m   [0;1mINSERT INTO "videos" ("created_at", "title", "thumbnail", "updated_at", "url", "season", "episode", "summary") VALUES('2011-05-17 16:58:45', NULL, NULL, '2011-05-17 16:58:45', NULL, NULL, NULL, NULL)[0m
+Redirected to http://localhost:3000/videos/1
+Completed in 26ms (DB: 7) | 302 Found [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 12:58:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 76ms (View: 71, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:58:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1/edit]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 12:58:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:58:54) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:58:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/edit
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/videos/1/edit]
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:59:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/edit
+
+ActionView::TemplateError (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x103a6e920>) on line #7 of app/views/videos/edit.html.erb:
+4:   <%= f.error_messages %>
+5: 
+6: 
+7:     <%= f.input :url %>
+8:   <p>
+9:     <%= f.submit 'Update' %>
+10:   </p>
+
+    app/views/videos/edit.html.erb:7
+    app/views/videos/edit.html.erb:3
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 13:00:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/edit
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/1/edit]
+
+
+Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 13:02:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/edit
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/1/edit]
+
+
+Processing VideosController#update (for 127.0.0.1 at 2011-05-17 13:07:00) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY=", "id"=>"1", "video"=>{"title"=>"And Maggie Makes Three", "thumbnail"=>"http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-13-English-Subbed.jpg", "url"=>"http://wwwstatic.megavideo.com/mv_player.swf?v=VHT28312", "episode"=>"13", "season"=>"6", "summary"=>"Homer regales the long story of Maggie’s birth. Back in 1993, Homer dreams of working at the bowling alley, even though it pays less than his job at the Power Plant. Homer works out a way that means the family will have enough to live on, as long as everything stays exactly the way it is. However, Marge becomes pregnant once again, but tries to keep the news from Homer. He eventually finds out and, because of the impending financial problems, is forced to go back to the Power Plant. As much as he dreads the idea of having another child, when Maggie is born Homer immediately falls in love with her."}}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+  [4;36;1mVideo Update (1.3ms)[0m   [0;1mUPDATE "videos" SET "updated_at" = '2011-05-17 17:07:00', "title" = 'And Maggie Makes Three', "url" = 'http://wwwstatic.megavideo.com/mv_player.swf?v=VHT28312', "thumbnail" = 'http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-13-English-Subbed.jpg', "episode" = '13', "season" = '6', "summary" = 'Homer regales the long story of Maggie’s birth. Back in 1993, Homer dreams of working at the bowling alley, even though it pays less than his job at the Power Plant. Homer works out a way that means the family will have enough to live on, as long as everything stays exactly the way it is. However, Marge becomes pregnant once again, but tries to keep the news from Homer. He eventually finds out and, because of the impending financial problems, is forced to go back to the Power Plant. As much as he dreads the idea of having another child, when Maggie is born Homer immediately falls in love with her.' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/videos/1
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:07:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:09:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:12:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:13:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:13:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:14:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:15:18) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:16:06) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 73ms (View: 9, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:04) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+ERROR: compiling _run_erb_app47views47videos47index46html46erb RAISED compile error
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:9: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\", video %></td>\n    <td>"
+                              ^
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:14: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+      ^
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:20: syntax error, unexpected kENSURE, expecting ')'
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:22: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47videos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing videos</h1>\n\n<table>\n  <tr>\n  </tr>\n\n"
+
+
+
+
+
+;  @videos.each do |video| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat(( link_to "#{video.season_label} - #{video.title} ).to_s); @output_buffer.concat "\", video %></td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', video ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_video_path(video) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New video', new_video_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:22:in `compile!'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/conroywhitney/Simpsons/app/controllers/videos_controller.rb:7:in `index'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/head.rb:9:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/lock.rb:11:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/lock.rb:11:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/urlmap.rb:47:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/urlmap.rb:41:in `each'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/urlmap.rb:41:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/content_length.rb:13:in `call'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/handler/webrick.rb:48:in `service'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rack-1.1.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334@rails2311/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:9: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\", video %></td>\n    <td>"
+                              ^
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:14: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+      ^
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:20: syntax error, unexpected kENSURE, expecting ')'
+/Users/conroywhitney/Simpsons/app/views/videos/index.html.erb:22: syntax error, unexpected kEND, expecting ')') on line #9 of app/views/videos/index.html.erb:
+6: 
+7: <% @videos.each do |video| %>
+8:   <tr>
+9:     <td><%= link_to "#{video.season_label} - #{video.title} %>", video %></td>
+10:     <td><%= link_to 'Show', video %></td>
+11:     <td><%= link_to 'Edit', edit_video_path(video) %></td>
+12:     <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/videos/index.html.erb:22:in `compile!'
+    app/controllers/videos_controller.rb:7:in `index'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:13) [GET]
+  [4;36;1mVideo Load (0.5ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:17:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 70ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:53) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:17:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:18:42) [GET]
+  [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:18:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:19:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/videos/1]
+
+
+Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:19:33) [GET]
+  [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
+Rendering template within layouts/videos
+Rendering videos/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/videos]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:19:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
+Rendering template within layouts/videos
+Rendering videos/show
+Completed in 69ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]

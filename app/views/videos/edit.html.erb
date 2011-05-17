@@ -1,0 +1,31 @@
+<h1>Editing video</h1>
+
+<% form_for(@video) do |f| %>
+  <%= f.error_messages %>
+
+
+    <%= f.label :title, 'Title' %>:
+    <%= f.text_field :title %><br />
+
+    <%= f.label :season, 'Season' %>:
+    <%= f.text_field :season %><br />
+
+    <%= f.label :episode, 'Episode' %>:
+    <%= f.text_field :episode %><br />
+
+    <%= f.label :url, 'URL' %>:
+    <%= f.text_field :url %><br />
+
+    <%= f.label :thumbnail, 'Thumbnail' %>:
+    <%= f.text_field :thumbnail %><br />
+
+    <%= f.label :summary, 'Summary' %>:
+    <%= f.text_area :summary %><br />
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @video %> |
+<%= link_to 'Back', videos_path %>
