@@ -14,10 +14,27 @@ li.episode {
     text-align:center;
     float:left;
     margin:15px;
+    width:180px;
+    height:180px;
+    border:2px solid #000;
+}
+
+li.episode:hover {
+    background:#FFF;
+}
+
+li.episode a {
+    display:block;
+    height:18px;
+    width:100%;
+    color:#000;
+    text-decoration:none;
+    margin:5px auto;
 }
 
 li.episode img {
     margin:15px;
+    width:150px;
 }
 
 #episode_content {
@@ -58,5 +75,10 @@ h1.homepage {
 }
 
 img#simpsons-characters {
+    width:900px;
+}
+
+ul#season-episodes {
+    margin:0px auto;
     width:900px;
 }

@@ -9,7 +9,10 @@
 <% end %>
 
 <div id="episode_content">
-    <h1><%= link_to "Season #{@video.season}", :controller => "season", :action => "show", :season => @video.season %> - Episode <%= @video.episode %></h1>
+    <h1><%= link_to "Season #{@video.season}",
+                    :controller => "season",
+                    :action => "show",
+                    :season => @video.season %> - Episode <%= @video.episode %></h1>
     <h2><%= @video.title %></h2>
 
     <fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
