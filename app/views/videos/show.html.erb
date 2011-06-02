@@ -9,40 +9,35 @@
 <% end %>
 
 <div id="episode_content">
-    <h1><%= link_to "Season #{@video.season}",
-                    :controller => "season",
-                    :action => "show",
-                    :season => @video.season %> - Episode <%= @video.episode %></h1>
+
+    <h1>The Simpsons - Season <%= @video.season %> - Episode <%= @video.episode %></h1>
+
     <h2><%= @video.title %></h2>
 
     <fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
 
     <h3><%= @video.summary %></h3>
 
-    <object width="530"
-            height="410"
-            id="video"
-            type="application/x-shockwave-flash"
-            data="<%= @video.source %>">
-        <param name="movie" value="<%= @video.source %>"/>
-        <param name="quality" value="high" />
-        <param name="scale" value="noorder" />
-        <param name="wmode" value="transparent" />
-        <param name="allowscriptaccess" value="never" />
-        <param name="allownetworking" value="internal" />
-        <param name="allowfullscreen" value="true" />
-        <param name="pluginspage" value="http://www.macromedia.com/go/getflashplayer" />
-    </object>
+    <div id="embedded_video">
+        <object width="530"
+                height="410"
+                id="video"
+                type="application/x-shockwave-flash"
+                data="<%= @video.source %>">
+            <param name="movie" value="<%= @video.source %>"/>
+            <param name="quality" value="high" />
+            <param name="scale" value="noorder" />
+            <param name="wmode" value="transparent" />
+            <param name="allowscriptaccess" value="never" />
+            <param name="allownetworking" value="internal" />
+            <param name="allowfullscreen" value="true" />
+            <param name="pluginspage" value="http://www.macromedia.com/go/getflashplayer" />
+        </object>
+    </div>
 
+    <div class="clearfix"></div>
 
-    <h3>Related Videos</h3>
-    <fb:recommendations site="<%= @url %>" width="300" height="300" header="false" border_color="#FFFFFF"></fb:recommendations>
+    <br />
+    <%= render :partial => "home/season_links" %>
 
-    <h3>Comments</h3>
-    <fb:comments xid="<%= @url %>" numposts="10" width="600" publish_feed="true"></fb:comments>
-
-    <br /><br />
-
-    <%= link_to 'Edit', edit_video_path(@video) %> |
-    <%= link_to 'Back', videos_path %>
 </div>

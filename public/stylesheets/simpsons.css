@@ -37,14 +37,24 @@ li.episode img {
     width:150px;
 }
 
-#episode_content {
-    text-align:center;
-    width:600px;
-    margin:0px auto;
-}
-
 #episode_content h3 {
     font-size:12pt;
+    width:350px;
+    float:left;
+    margin:25px 5px 5px 5px;
+    text-align:left;
+}
+
+#embedded_video {
+    float:right;
+    width:530px;
+    margin:5px;
+}
+
+ul#season_links {
+    width:950px;
+    height:30px;
+    margin:5px auto;
 }
 
 ul#season_links li {
@@ -54,10 +64,6 @@ ul#season_links li {
     font-size:16pt;
 }
 
-ul#season_links {
-    width:950px;
-    margin:0px auto;
-}
 ul#season_links li a {
     color:#000;
     text-decoration:none;
@@ -81,4 +87,18 @@ img#simpsons-characters {
 ul#season-episodes {
     margin:0px auto;
     width:900px;
+}
+
+div.clearfix {
+    clear:both;
+}
+
+#episode_content h1 {
+    font-size:18pt;
+    margin:15px 5px 5px 5px;
+}
+
+#episode_content h2 {
+    font-size:24pt;
+    margin:5px 5px 20px 5px;
 }
