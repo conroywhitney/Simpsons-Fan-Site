@@ -1,5 +1,11 @@
-<ul>
+<h1 class="homepage">The Simpsons</h1>
+
+<ul id="season_links">
+    <li>Seasons</li>
 <% (1..22).each do |i| %>
-    <li><%= link_to "Season #{i} Full Simpsons Episodes", :controller => "season", :action => "show", :season => i %></li>
+    <li><%= link_to i, :controller => "season", :action => "show", :season => i %></li>
 <% end %>
 </ul>
+
+<img src="/images/simpsons-characters.jpg" id="simpsons-characters" />
+

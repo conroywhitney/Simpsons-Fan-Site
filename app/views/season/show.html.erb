@@ -5,6 +5,7 @@
     <h2>No Episodes Found</h2>
 <% else %>
     <ul>
+    <% (1..12).each do |i| %>
     <% @episodes.each do |episode| %>
         <li class="episode">
           <%= link_to "Season #{episode.season} Episode #{episode.episode}", :controller => "videos", :action => "show", :id => episode %>
@@ -13,6 +14,7 @@
           <br />
           <%= link_to "#{episode.title}", :controller => "videos", :action => "show", :id => episode %>
         </li>
+    <% end %>
     <% end %>
     </ul>
 <% end %>
