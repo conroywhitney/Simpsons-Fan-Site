@@ -3945,3 +3945,48 @@ Rendering template within layouts/application
 Rendering videos/show
 Rendered home/_season_links (4.1ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/104]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-07 15:16:05) [GET]
+  Parameters: {"season"=>"4"}
+  [4;36;1mVideo Load (2.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '4') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 165ms (View: 158, DB: 2) | 200 OK [http://localhost/season/show?season=4]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-07 15:16:20) [GET]
+  Parameters: {"id"=>"80"}
+  [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 80) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/80]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-07 15:16:34) [GET]
+  Parameters: {"id"=>"69"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 69) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/69]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-07 19:20:01) [GET]
+  Parameters: {"season"=>"5"}
+  [4;35;1mVideo Load (22.9ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '5') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 191ms (View: 162, DB: 23) | 200 OK [http://localhost/season/show?season=5]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-07 19:20:19) [GET]
+  Parameters: {"id"=>"84"}
+  [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 84) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.0ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/84]
