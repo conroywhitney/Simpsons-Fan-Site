@@ -37,24 +37,17 @@ li.episode img {
     width:150px;
 }
 
-#episode_content h3 {
-    font-size:12pt;
-    width:350px;
-    float:left;
-    margin:25px 5px 5px 5px;
-    text-align:left;
-}
-
 #embedded_video {
     float:right;
-    width:530px;
+    width:400px;
     margin:5px;
 }
 
 ul#season_links {
-    width:950px;
+    width:875px;
     height:30px;
     margin:5px auto;
+    padding:5px;
 }
 
 ul#season_links li {
@@ -101,4 +94,13 @@ div.clearfix {
 #episode_content h2 {
     font-size:24pt;
     margin:5px 5px 20px 5px;
+}
+
+#episode_content h3 {
+    font-family:Comic Sans MS;
+    font-size:12pt;
+    width:475px;
+    float:left;
+    margin:5px 5px 5px 5px;
+    text-align:left;
 }
