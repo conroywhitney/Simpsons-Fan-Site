@@ -25,15 +25,18 @@ li.episode:hover {
 
 li.episode a {
     display:block;
-    height:18px;
     width:100%;
     color:#000;
     text-decoration:none;
     margin:5px auto;
 }
 
+li.episode a.episode-link {
+    height:18px;
+}
+
 li.episode img {
-    margin:15px;
+    margin:12px 12px 0px 12px;
     width:150px;
 }
 
@@ -103,4 +106,8 @@ div.clearfix {
     float:left;
     margin:5px 5px 5px 5px;
     text-align:left;
+}
+
+.season-label {
+    float:bottom;
 }
