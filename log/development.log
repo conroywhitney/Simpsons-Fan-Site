@@ -4132,3 +4132,395 @@ Rendering template within layouts/application
 Rendering videos/show
 Rendered home/_season_links (4.1ms)
 Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/314]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 13:52:45) [GET]
+  Parameters: {"season"=>"9"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '9') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=9]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:52:49) [GET]
+  Parameters: {"id"=>"188"}
+  [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.0ms)
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:53:33) [GET]
+  Parameters: {"id"=>"188"}
+  [4;36;1mVideo Load (1.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.2ms)
+Completed in 80ms (View: 73, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:31) [GET]
+  Parameters: {"id"=>"188"}
+  [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.0ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:41) [GET]
+  Parameters: {"id"=>"188"}
+  [4;36;1mVideo Load (1.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (5.5ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:55) [GET]
+  Parameters: {"id"=>"188"}
+  [4;35;1mVideo Load (2.7ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:56:04) [GET]
+  Parameters: {"id"=>"188"}
+  [4;36;1mVideo Load (4.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.7ms)
+Completed in 24ms (View: 13, DB: 5) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:57:00) [GET]
+  Parameters: {"id"=>"188"}
+  [4;35;1mVideo Load (1.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.3ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:59:43) [GET]
+  Parameters: {"id"=>"188"}
+  [4;36;1mVideo Load (1.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:00:48) [GET]
+  Parameters: {"id"=>"188"}
+  [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/videos/188]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-06-09 14:01:02) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_season_links (6.7ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-06-09 14:01:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_season_links (4.4ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:01:29) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:02:06) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (4.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.1ms)
+Completed in 31ms (View: 16, DB: 4) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:02:30) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.5ms)
+Completed in 83ms (View: 75, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:02:53) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:03:01) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 25ms (View: 17, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:03:23) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.6ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 29ms (View: 20, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:03:32) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (4.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (73.7ms)
+Completed in 96ms (View: 85, DB: 4) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:04:14) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:04:22) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.9ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 23ms (View: 14, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:05:07) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.5ms)
+Completed in 26ms (View: 18, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:05:20) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.6ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 24ms (View: 16, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:05:39) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.8ms)
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:06:01) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 24ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:06:12) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:06:33) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:09:14) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (5.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (5.7ms)
+Completed in 31ms (View: 19, DB: 5) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:10:00) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (3.6ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.7ms)
+Completed in 28ms (View: 18, DB: 4) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:10:38) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 86ms (View: 78, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:11:49) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (6.4ms)
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:13:13) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.6ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:13:32) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.7ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:13:40) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (65.6ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 87ms (View: 16, DB: 66) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:13:58) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.1ms)
+Completed in 22ms (View: 14, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:14:35) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:15:14) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (3.1ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 27ms (View: 18, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:15:47) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.5ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:16:01) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.8ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 16, DB: 3) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:16:26) [GET]
+  Parameters: {"season"=>"2"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:17:13) [GET]
+  Parameters: {"season"=>"2"}
+  [4;36;1mVideo Load (2.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '2') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.5ms)
+Completed in 26ms (View: 18, DB: 2) | 200 OK [http://localhost/season/show?season=2]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:17:39) [GET]
+  Parameters: {"season"=>"16"}
+  [4;35;1mVideo Load (2.5ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '16') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=16]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:17:49) [GET]
+  Parameters: {"season"=>"9"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '9') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=9]
+
+
+Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:17:52) [GET]
+  Parameters: {"id"=>"199"}
+  [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.2ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/199]

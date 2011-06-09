@@ -56,13 +56,34 @@ ul#season_links {
 ul#season_links li {
     float:left;
     display:block;
-    margin-right:15px;
     font-size:16pt;
+    text-align:center;
+    height:40px;
+}
+
+ul#season_links li.single-digit {
+    width:25px;
+}
+
+ul#season_links li.double-digit {
+    width:40px;
 }
 
 ul#season_links li a {
     color:#000;
     text-decoration:none;
+}
+
+ul#season_links li a:hover {
+    font-size:28pt;
+}
+
+#season_link_label {
+    margin-right:5px;
+}
+
+ul#season_links li.double-digit a:hover {
+    margin-left:-3px;
 }
 
 div#content {
@@ -111,4 +132,10 @@ div.clearfix {
 
 .season-label {
     float:bottom;
+}
+
+#video_thumb {
+    width:400px;
+    height:300px;
+    border:0px;
 }

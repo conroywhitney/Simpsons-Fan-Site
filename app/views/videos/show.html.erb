@@ -10,7 +10,7 @@
 
 <div id="episode_content">
 
-    <h1>The Simpsons - Season <%= @video.season %> - Episode <%= @video.episode %></h1>
+    <h1>*Simpsons - Season <%= @video.season %> - Episode <%= @video.episode %></h1>
 
     <h2><%= @video.title %></h2>
 
@@ -19,20 +19,9 @@
     <h3><%= @video.summary %></h3>
 
     <div id="embedded_video">
-        <object width="400"
-                height="300"
-                id="video"
-                type="application/x-shockwave-flash"
-                data="<%= @video.source %>">
-            <param name="movie" value="<%= @video.source %>"/>
-            <param name="quality" value="high" />
-            <param name="scale" value="noorder" />
-            <param name="wmode" value="transparent" />
-            <param name="allowscriptaccess" value="never" />
-            <param name="allownetworking" value="internal" />
-            <param name="allowfullscreen" value="true" />
-            <param name="pluginspage" value="http://www.macromedia.com/go/getflashplayer" />
-        </object>
+        <a id="video_link" href="<%= @video.source %>" target="_blank">
+            <img id="video_thumb" src="<%= @video.thumbnail %>" />
+        </a>
     </div>
 
     <div class="clearfix"></div>
@@ -41,3 +30,9 @@
     <%= render :partial => "home/season_links" %>
 
 </div>
+
+<script type="text/javascript">
+    $("#video_link").click(function() {
+       alert('okay');
+    });
+</script>
