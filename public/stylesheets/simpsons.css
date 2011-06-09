@@ -143,4 +143,28 @@ div.clearfix {
 #episode_stats {
     width:400px;
     float:right;
+    font-size:16pt;
+}
+#episode_stats ul {
+    padding:0px;
+    margin:0px;
+}
+#episode_stats ul li {
+    list-style-type:none;
+    margin:5px 0px;
+}
+.stats_label {
+    float:left;
+    width:200px;
+    text-align:left;
+    margin-top:10px;
+}
+.stats_value, .ajaxful-rating-wrapper {
+    float:right;
+    width:150px;
+    margin-left:10px;
+    text-align:center;
+}
+#rating_label {
+    margin-top:15px;
 }

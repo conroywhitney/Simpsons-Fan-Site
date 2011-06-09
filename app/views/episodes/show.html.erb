@@ -25,8 +25,8 @@
 
         <div id="episode_stats">
             <ul>
-                <li>Last Watched: <span id="last-watched"><%= @last_watched %></span></li>
-                <li>Rating: <%= ratings_for @episode, :show_user_rating => true %></li>
+                <li><div class="stats_label" id="rating_label">Rating</div><%= ratings_for @episode, :show_user_rating => true %></li>
+                <li><div class="stats_label">Last Watched</div><div id="last_watched" class="stats_value"><%= @last_watched %></div></li>
             </ul>
         </div>
     </div>
