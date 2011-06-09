@@ -2,8 +2,8 @@ class CreateVideos < ActiveRecord::Migration
   def self.up
     create_table :videos do |t|
       t.string :title
-      t.string :season
-      t.string :episode
+      t.integer :season
+      t.integer :episode
       t.string :url
       t.string :thumbnail
       t.text :summary

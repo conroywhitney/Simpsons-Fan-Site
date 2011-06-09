@@ -15,7 +15,7 @@
           <a href="<%= url_for :controller => "videos",
                                :action => "show",
                                :id => episode %>">
-              <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
+              <img src="<%= episode.thumbnail %>" class="episode-thumbnail" title="<%= episode.summary %>" />
           </a>
 
           <div class="clearfix"></div>
