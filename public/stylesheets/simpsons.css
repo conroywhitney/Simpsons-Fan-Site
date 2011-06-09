@@ -13,9 +13,9 @@ li.episode {
     display:block;
     text-align:center;
     float:left;
-    margin:15px;
-    width:180px;
-    height:180px;
+    margin:5px;
+    width:200px;
+    height:200px;
     border:2px solid #000;
 }
 
@@ -82,7 +82,8 @@ img#simpsons-characters {
 
 ul#season-episodes {
     margin:0px auto;
-    width:900px;
+    width:875px;
+    padding:5px;
 }
 
 div.clearfix {

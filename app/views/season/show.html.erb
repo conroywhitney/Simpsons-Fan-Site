@@ -6,7 +6,6 @@
     <h2>No Episodes Found</h2>
 <% else %>
     <ul id="season-episodes">
-    <% (1..12).each do |i| %>
     <% @episodes.each do |episode| %>
         <li class="episode">
           <%= link_to "#{episode.title}",
@@ -24,7 +23,6 @@
           <div class="season-label"><%= episode.season_label_short %></div>
 
         </li>
-    <% end %>
     <% end %>
     </ul>
 <% end %>
