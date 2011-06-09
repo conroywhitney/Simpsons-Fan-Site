@@ -19,13 +19,13 @@
     <h3><%= @episode.summary %></h3>
 
     <div id="embedded_video">
-        <a id="episode_link" href="<%= @episode.source %>" target="_blank">
+        <a id="video_link" href="<%= @episode.source %>" target="_blank">
             <img id="video_thumb" src="<%= @episode.thumbnail %>" />
         </a>
 
         <div id="episode_stats">
             <ul>
-                <li>Last Watched: <span id="last-watched">NULL</span></li>
+                <li>Last Watched: <span id="last-watched"><%= @last_watched %></span></li>
                 <li>Rating: <%= ratings_for @episode, :show_user_rating => true %></li>
             </ul>
         </div>
@@ -39,7 +39,7 @@
 </div>
 
 <script type="text/javascript">
-    $("#episode_link").click(function() {
+    $("#video_link").click(function() {
        $.ajax({
           url: "<%= url_for :controller => "episode_views", :action => "tally", :episode_id => @episode.id, :user_id => @user_id %>",
           context: document.body,

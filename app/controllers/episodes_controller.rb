@@ -9,6 +9,17 @@ class EpisodesController < ApplicationController
     @episode = Episode.find(params[:id])
     @page_title = "The Simpsons - #{@episode.title} (#{@episode.season_label_short})"
     @user_id = current_user.id
+
+    last_viewing = EpisodeView.first(
+        :conditions => ["episode_id = ? AND user_id = ?", @episode.id, @user_id],
+        :order => "id DESC"
+    )
+    if last_viewing
+        @last_watched = last_viewing.friendly_timespan
+    else
+        @last_watched = "Never"
+    end
+
   end
 
   def rate
