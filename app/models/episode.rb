@@ -1,4 +1,5 @@
 class Episode < ActiveRecord::Base
+    ajaxful_rateable :stars => 3
 
   def source
     return "#{self.url}&amp;image=#{self.thumbnail}"

@@ -139,3 +139,8 @@ div.clearfix {
     height:300px;
     border:0px;
 }
+
+#episode_stats {
+    width:400px;
+    float:right;
+}

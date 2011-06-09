@@ -18,7 +18,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of   :email
   validates_format_of       :email,    :with => Authentication.email_regex, :message => Authentication.bad_email_message
 
-  
+  # for star-ratings
+  ajaxful_rater
 
   # HACK HACK HACK -- how to do attr_accessible from here?
   # prevents a user from submitting a crafted form that bypasses activation

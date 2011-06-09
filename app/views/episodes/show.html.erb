@@ -22,13 +22,13 @@
         <a id="episode_link" href="<%= @episode.source %>" target="_blank">
             <img id="video_thumb" src="<%= @episode.thumbnail %>" />
         </a>
-    </div>
 
-    <div id="episode_stats">
-        <ul>
-            <li>Last Watched: <span id="last-watched">NULL</span></li>
-            <li>Rating: NULL</li>
-        </ul>
+        <div id="episode_stats">
+            <ul>
+                <li>Last Watched: <span id="last-watched">NULL</span></li>
+                <li>Rating: <%= ratings_for @episode, :show_user_rating => true %></li>
+            </ul>
+        </div>
     </div>
 
     <div class="clearfix"></div>

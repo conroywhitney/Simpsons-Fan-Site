@@ -11,6 +11,15 @@ class EpisodesController < ApplicationController
     @user_id = current_user.id
   end
 
+  def rate
+    @episode = Episode.find(params[:id])
+    @episode.rate(params[:stars], current_user)
+    render :update do |page|
+        page.replace_html @episode.wrapper_dom_id(params), ratings_for(@episode, params.merge(:wrap => false))
+        page.visual_effect :highlight, @episode.wrapper_dom_id(params)
+    end
+  end
+
   def new
     @episode = Episode.new
   end
