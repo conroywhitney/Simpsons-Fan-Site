@@ -41,7 +41,7 @@
 <script type="text/javascript">
     $("#episode_link").click(function() {
        $.ajax({
-          url: "<%= url_for :action => "tally", :id => @episode.id %>",
+          url: "<%= url_for :controller => "episode_views", :action => "tally", :episode_id => @episode.id, :user_id => @user.id %>",
           context: document.body,
           success: function(){
             $("#last_watched").html("Today");

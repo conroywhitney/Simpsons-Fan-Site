@@ -9,15 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110517165229) do
+ActiveRecord::Schema.define(:version => 20110609202030) do
 
-  create_table "episodes", :force => true do |t|
+  create_table "episode_views", :force => true do |t|
+    t.integer  "episode_id", :null => false
+    t.integer  "user_id",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "episodes", :id => false, :force => true do |t|
+    t.integer  "id",         :null => false
     t.string   "title"
-    t.integer   "season"
-    t.integer   "episode"
+    t.integer  "season",     :null => false
+    t.integer  "episode",    :null => false
     t.string   "url"
     t.string   "thumbnail"
     t.text     "summary"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "login",      :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -8,6 +8,7 @@ class EpisodesController < ApplicationController
   def show
     @episode = Episode.find(params[:id])
     @page_title = "The Simpsons - #{@episode.title} (#{@episode.season_label_short})"
+    @user = User.find_by_id(1)
   end
 
   def new
