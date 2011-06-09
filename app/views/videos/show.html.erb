@@ -24,6 +24,13 @@
         </a>
     </div>
 
+    <div id="video_stats">
+        <ul>
+            <li>Last Watched: <span id="last-watched">NULL</span></li>
+            <li>Rating: NULL</li>
+        </ul>
+    </div>
+
     <div class="clearfix"></div>
 
     <br />
@@ -33,6 +40,15 @@
 
 <script type="text/javascript">
     $("#video_link").click(function() {
-       alert('okay');
+       $.ajax({
+          url: "<%= url_for :action => "tally", :id => @video.id %>",
+          context: document.body,
+          success: function(){
+            $("#last_watched").html("Today");
+          },
+          error: function() {
+              alert('error!');
+          }
+        });
     });
 </script>
