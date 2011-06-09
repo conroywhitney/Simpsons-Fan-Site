@@ -1,30 +1,30 @@
 
 <% content_for :head_og do %>
-    <meta property="og:title" content="The Simpsons - <%= @video.title %> (<%= @video.season_label_short %>)"/>
+    <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)"/>
     <meta property="og:type" content="tv_show"/>
     <meta property="og:url" content=""/>
     <meta property="og:image" content=""/>
     <meta property="og:site_name" content="The Simpsons"/>
-    <meta property="og:description" content="<%= @video.summary %>"/>
+    <meta property="og:description" content="<%= @episode.summary %>"/>
 <% end %>
 
 <div id="episode_content">
 
-    <h1>*Simpsons - Season <%= @video.season %> - Episode <%= @video.episode %></h1>
+    <h1>*Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %></h1>
 
-    <h2><%= @video.title %></h2>
+    <h2><%= @episode.title %></h2>
 
     <fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
 
-    <h3><%= @video.summary %></h3>
+    <h3><%= @episode.summary %></h3>
 
     <div id="embedded_video">
-        <a id="video_link" href="<%= @video.source %>" target="_blank">
-            <img id="video_thumb" src="<%= @video.thumbnail %>" />
+        <a id="episode_link" href="<%= @episode.source %>" target="_blank">
+            <img id="video_thumb" src="<%= @episode.thumbnail %>" />
         </a>
     </div>
 
-    <div id="video_stats">
+    <div id="episode_stats">
         <ul>
             <li>Last Watched: <span id="last-watched">NULL</span></li>
             <li>Rating: NULL</li>
@@ -39,9 +39,9 @@
 </div>
 
 <script type="text/javascript">
-    $("#video_link").click(function() {
+    $("#episode_link").click(function() {
        $.ajax({
-          url: "<%= url_for :action => "tally", :id => @video.id %>",
+          url: "<%= url_for :action => "tally", :id => @episode.id %>",
           context: document.body,
           success: function(){
             $("#last_watched").html("Today");

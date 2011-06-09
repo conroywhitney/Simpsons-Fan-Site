@@ -1,6 +1,6 @@
-class CreateVideos < ActiveRecord::Migration
+class CreateEpisodes < ActiveRecord::Migration
   def self.up
-    create_table :videos do |t|
+    create_table :episodes do |t|
       t.string :title
       t.integer :season
       t.integer :episode
@@ -12,6 +12,6 @@ class CreateVideos < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :videos
+    drop_table :episodes
   end
 end

@@ -1,6 +1,6 @@
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:54:07) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 12:54:07) [GET]
   [4;36;1mVideo Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: videos: SELECT * FROM "videos" [0m
 
 ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: videos: SELECT * FROM "videos" ):
@@ -32,13 +32,13 @@ Rendering rescues/layout (internal_server_error)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
-Migrating to CreateVideos (20110517165229)
+Migrating to CreateEpisodes (20110517165229)
   [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
-Migrating to CreateVideos (20110517165229)
+Migrating to CreateEpisodes (20110517165229)
   [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
   [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "season" varchar(255), "episode" varchar(255), "url" varchar(255), "thumbnail" varchar(255), "summary" text, "created_at" datetime, "updated_at" datetime) [0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110517165229')[0m
@@ -54,27 +54,27 @@ Migrating to CreateVideos (20110517165229)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("videos")[0m
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:58:41) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 12:58:41) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#new (for 127.0.0.1 at 2011-05-17 12:58:43) [GET]
+Processing EpisodesController#new (for 127.0.0.1 at 2011-05-17 12:58:43) [GET]
 Rendering template within layouts/videos
 Rendering videos/new
 Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/videos/new]
 
 
-Processing VideosController#create (for 127.0.0.1 at 2011-05-17 12:58:45) [POST]
+Processing EpisodesController#create (for 127.0.0.1 at 2011-05-17 12:58:45) [POST]
   Parameters: {"commit"=>"Create", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY="}
   [4;36;1mVideo Create (7.1ms)[0m   [0;1mINSERT INTO "videos" ("created_at", "title", "thumbnail", "updated_at", "url", "season", "episode", "summary") VALUES('2011-05-17 16:58:45', NULL, NULL, '2011-05-17 16:58:45', NULL, NULL, NULL, NULL)[0m
 Redirected to http://localhost:3000/videos/1
 Completed in 26ms (DB: 7) | 302 Found [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 12:58:45) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 12:58:45) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -82,7 +82,7 @@ Rendering videos/show
 Completed in 76ms (View: 71, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:58:47) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 12:58:47) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -90,7 +90,7 @@ Rendering videos/edit
 Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1/edit]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 12:58:53) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 12:58:53) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -98,14 +98,14 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 12:58:54) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 12:58:54) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:58:57) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 12:58:57) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -113,7 +113,7 @@ Rendering videos/edit
 Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/videos/1/edit]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 12:59:41) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 12:59:41) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -146,7 +146,7 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 13:00:50) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 13:00:50) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -154,7 +154,7 @@ Rendering videos/edit
 Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/1/edit]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 13:02:28) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 13:02:28) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -162,7 +162,7 @@ Rendering videos/edit
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/1/edit]
 
 
-Processing VideosController#update (for 127.0.0.1 at 2011-05-17 13:07:00) [PUT]
+Processing EpisodesController#update (for 127.0.0.1 at 2011-05-17 13:07:00) [PUT]
   Parameters: {"commit"=>"Update", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY=", "id"=>"1", "video"=>{"title"=>"And Maggie Makes Three", "thumbnail"=>"http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-13-English-Subbed.jpg", "url"=>"http://wwwstatic.megavideo.com/mv_player.swf?v=VHT28312", "episode"=>"13", "season"=>"6", "summary"=>"Homer regales the long story of Maggie’s birth. Back in 1993, Homer dreams of working at the bowling alley, even though it pays less than his job at the Power Plant. Homer works out a way that means the family will have enough to live on, as long as everything stays exactly the way it is. However, Marge becomes pregnant once again, but tries to keep the news from Homer. He eventually finds out and, because of the impending financial problems, is forced to go back to the Power Plant. As much as he dreads the idea of having another child, when Maggie is born Homer immediately falls in love with her."}}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
   [4;36;1mVideo Update (1.3ms)[0m   [0;1mUPDATE "videos" SET "updated_at" = '2011-05-17 17:07:00', "title" = 'And Maggie Makes Three', "url" = 'http://wwwstatic.megavideo.com/mv_player.swf?v=VHT28312', "thumbnail" = 'http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-13-English-Subbed.jpg', "episode" = '13', "season" = '6', "summary" = 'Homer regales the long story of Maggie’s birth. Back in 1993, Homer dreams of working at the bowling alley, even though it pays less than his job at the Power Plant. Homer works out a way that means the family will have enough to live on, as long as everything stays exactly the way it is. However, Marge becomes pregnant once again, but tries to keep the news from Homer. He eventually finds out and, because of the impending financial problems, is forced to go back to the Power Plant. As much as he dreads the idea of having another child, when Maggie is born Homer immediately falls in love with her.' WHERE "id" = 1[0m
@@ -170,7 +170,7 @@ Redirected to http://localhost:3000/videos/1
 Completed in 11ms (DB: 1) | 302 Found [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:07:00) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:07:00) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -178,7 +178,7 @@ Rendering videos/show
 Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:09:45) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:09:45) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -186,7 +186,7 @@ Rendering videos/show
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:12:00) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:12:00) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -194,7 +194,7 @@ Rendering videos/show
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:13:15) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:13:15) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -202,7 +202,7 @@ Rendering videos/show
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:13:35) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:13:35) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -210,7 +210,7 @@ Rendering videos/show
 Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:14:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:14:04) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -218,21 +218,21 @@ Rendering videos/show
 Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:15:18) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:15:18) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:16:06) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:16:06) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 73ms (View: 9, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:04) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:17:04) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
@@ -386,14 +386,14 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:13) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:17:13) [GET]
   [4;36;1mVideo Load (0.5ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:17:18) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:17:18) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -401,14 +401,14 @@ Rendering videos/show
 Completed in 70ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:17:53) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:17:53) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:17:55) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:17:55) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -416,14 +416,14 @@ Rendering videos/show
 Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:18:42) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:18:42) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:18:51) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:18:51) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -431,7 +431,7 @@ Rendering videos/show
 Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:19:05) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:19:05) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -439,14 +439,14 @@ Rendering videos/show
 Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 13:19:33) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 13:19:33) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 13:19:35) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 13:19:35) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -454,7 +454,7 @@ Rendering videos/show
 Completed in 69ms (View: 3, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:38:20) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:38:20) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -462,7 +462,7 @@ Rendering videos/show
 Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:39:12) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:39:12) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -470,13 +470,13 @@ Rendering videos/show
 Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:40:09) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 14:40:09) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 
 ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #16 of app/views/layouts/videos.html.erb:
-13:   <title>Videos: <%= controller.action_name %></title>
+13:   <title>Episodes: <%= controller.action_name %></title>
 14:   <%= stylesheet_link_tag 'scaffold' %>
 15: 
 16:     <meta property="og:title" content="The Simpsons - <%= @video.title %> (<%= @video.season_label_short %>)"/>
@@ -502,14 +502,14 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:44:01) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 14:44:01) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:44:09) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:44:09) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -517,7 +517,7 @@ Rendering videos/show
 Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:47:20) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:47:20) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -525,21 +525,21 @@ Rendering videos/show
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:47:32) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 14:47:32) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 14:49:59) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 14:49:59) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:50:01) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:50:01) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -547,7 +547,7 @@ Rendering videos/show
 Completed in 73ms (View: 67, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:51:30) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:51:30) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -555,7 +555,7 @@ Rendering videos/show
 Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:51:36) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:51:36) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -563,7 +563,7 @@ Rendering videos/show
 Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:52:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:52:04) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -571,7 +571,7 @@ Rendering videos/show
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:52:52) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:52:52) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -579,7 +579,7 @@ Rendering videos/show
 Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 14:54:50) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 14:54:50) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -587,7 +587,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:06:31) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 15:06:31) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -595,7 +595,7 @@ Rendering videos/show
 Completed in 74ms (View: 68, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:03) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 15:08:03) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -627,7 +627,7 @@ Rendered rescues/_request_and_response (0.4ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:07) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 15:08:07) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -659,7 +659,7 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 15:08:58) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 15:08:58) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -921,14 +921,14 @@ Rendered rescues/_request_and_response (1.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 16:26:36) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 16:26:36) [GET]
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:26:37) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:26:37) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -1263,7 +1263,7 @@ Rendering season/show
 Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:31:24) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:31:24) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -1285,7 +1285,7 @@ Rendering season/show
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:32:01) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:32:01) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/videos
@@ -1382,27 +1382,27 @@ Rendering season/show
 Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 16:35:58) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 16:35:58) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
 Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#new (for 127.0.0.1 at 2011-05-17 16:35:59) [GET]
+Processing EpisodesController#new (for 127.0.0.1 at 2011-05-17 16:35:59) [GET]
 Rendering template within layouts/videos
 Rendering videos/new
 Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/new]
 
 
-Processing VideosController#create (for 127.0.0.1 at 2011-05-17 16:36:01) [POST]
+Processing EpisodesController#create (for 127.0.0.1 at 2011-05-17 16:36:01) [POST]
   Parameters: {"commit"=>"Create", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY="}
   [4;36;1mVideo Create (0.4ms)[0m   [0;1mINSERT INTO "videos" ("created_at", "title", "thumbnail", "updated_at", "url", "season", "episode", "summary") VALUES('2011-05-17 20:36:01', NULL, NULL, '2011-05-17 20:36:01', NULL, NULL, NULL, NULL)[0m
 Redirected to http://localhost:3000/videos/2
 Completed in 10ms (DB: 0) | 302 Found [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:36:01) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:36:01) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/videos
@@ -1410,7 +1410,7 @@ Rendering videos/show
 Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:36:01) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:36:01) [GET]
   Parameters: {"id"=>"&image="}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 0) [0m
 
@@ -1432,7 +1432,7 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (not_found)
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-17 16:36:04) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-17 16:36:04) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/videos
@@ -1440,7 +1440,7 @@ Rendering videos/edit
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/2/edit]
 
 
-Processing VideosController#update (for 127.0.0.1 at 2011-05-17 16:37:57) [PUT]
+Processing EpisodesController#update (for 127.0.0.1 at 2011-05-17 16:37:57) [PUT]
   Parameters: {"commit"=>"Update", "authenticity_token"=>"h2PBMZzP4B1BHLOXB+33aVyohLgHJyY3dBkx5ETAdyY=", "id"=>"2", "video"=>{"title"=>"Bart of Darkness", "thumbnail"=>"http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-1-English-Subbed.jpg", "url"=>"http://wwwstatic.megavideo.com/mv_player.swf?v=8BBWEHZ9", "episode"=>"1", "season"=>"6", "summary"=>"A heat wave is gripping Springfield and the townspeople attempt to cool down. Bart and Lisa persuade Homer to buy them a swimming pool, which proves popular with the town’s other children. Bart ends up breaking his leg when he dives off his treehouse and is forced to spend the rest of the summer in his room. Realizing that he has become isolated, Lisa gives Bart her telescope to cheer him up. Using it, he witnesses Ned Flanders digging a grave and through his ramblings, determines that Ned has killed his wife Maude. He sends Lisa over to the Flanders’ house to look for proof of the “crime”, only for Ned to return, holding an axe. However, he is merely putting it away; and it is revealed that Maude is still alive and well, and all that Ned killed was her favorite plant."}}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
   [4;35;1mVideo Update (0.3ms)[0m   [0mUPDATE "videos" SET "updated_at" = '2011-05-17 20:37:57', "title" = 'Bart of Darkness', "url" = 'http://wwwstatic.megavideo.com/mv_player.swf?v=8BBWEHZ9', "thumbnail" = 'http://watchcartoononline.com/thumbs/The-Simpsons-Season-6-episode-1-English-Subbed.jpg', "episode" = '1', "season" = '6', "summary" = 'A heat wave is gripping Springfield and the townspeople attempt to cool down. Bart and Lisa persuade Homer to buy them a swimming pool, which proves popular with the town’s other children. Bart ends up breaking his leg when he dives off his treehouse and is forced to spend the rest of the summer in his room. Realizing that he has become isolated, Lisa gives Bart her telescope to cheer him up. Using it, he witnesses Ned Flanders digging a grave and through his ramblings, determines that Ned has killed his wife Maude. He sends Lisa over to the Flanders’ house to look for proof of the “crime”, only for Ned to return, holding an axe. However, he is merely putting it away; and it is revealed that Maude is still alive and well, and all that Ned killed was her favorite plant.' WHERE "id" = 2[0m
@@ -1448,7 +1448,7 @@ Redirected to http://localhost:3000/videos/2
 Completed in 10ms (DB: 0) | 302 Found [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:37:57) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:37:57) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/videos
@@ -1456,7 +1456,7 @@ Rendering videos/show
 Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 16:38:04) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 16:38:04) [GET]
   [4;35;1mVideo Load (0.4ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/videos
 Rendering videos/index
@@ -1743,7 +1743,7 @@ Rendering season/show
 Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:54:38) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:54:38) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1751,7 +1751,7 @@ Rendering videos/show
 Completed in 68ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:56:27) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:56:27) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1775,7 +1775,7 @@ Rendering season/show
 Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:58:14) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:58:14) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1783,7 +1783,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:59:34) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:59:34) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1791,7 +1791,7 @@ Rendering videos/show
 Completed in 72ms (View: 16, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:59:43) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:59:43) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1799,7 +1799,7 @@ Rendering videos/show
 Completed in 29ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 16:59:54) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 16:59:54) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1807,14 +1807,14 @@ Rendering videos/show
 Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#index (for 127.0.0.1 at 2011-05-17 17:00:22) [GET]
+Processing EpisodesController#index (for 127.0.0.1 at 2011-05-17 17:00:22) [GET]
   [4;35;1mVideo Load (0.5ms)[0m   [0mSELECT * FROM "videos" [0m
 Rendering template within layouts/application
 Rendering videos/index
 Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/videos]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:01:38) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:01:38) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1830,7 +1830,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:02:07) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:02:07) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1838,7 +1838,7 @@ Rendering videos/show
 Completed in 111ms (View: 17, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:02:21) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:02:21) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1854,7 +1854,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:03:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:03:04) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1862,7 +1862,7 @@ Rendering videos/show
 Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:03:19) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:03:19) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1870,7 +1870,7 @@ Rendering videos/show
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:03:28) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:03:28) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1886,7 +1886,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:04:08) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:04:08) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -1902,7 +1902,7 @@ Rendering season/show
 Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:04:11) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:04:11) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1918,7 +1918,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:04:21) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:04:21) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1926,7 +1926,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:05:02) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:05:02) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1934,7 +1934,7 @@ Rendering videos/show
 Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:05:10) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:05:10) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1970,7 +1970,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:06:24) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:06:24) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -1978,7 +1978,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:06:30) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:06:30) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -2032,7 +2032,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:07:15) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:07:15) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2048,7 +2048,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:07:26) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:07:26) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2056,7 +2056,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:07:33) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:07:33) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -2086,7 +2086,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 17:07:54) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 17:07:54) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2094,7 +2094,7 @@ Rendering videos/show
 Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-17 22:48:08) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-17 22:48:08) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2136,7 +2136,7 @@ Rendering season/show
 Completed in 78ms (View: 20, DB: 1) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-31 20:31:59) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-31 20:31:59) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2144,7 +2144,7 @@ Rendering videos/show
 Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-31 20:32:08) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-31 20:32:08) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2166,7 +2166,7 @@ Rendering season/show
 Completed in 78ms (View: 21, DB: 1) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-31 20:40:12) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-31 20:40:12) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2174,7 +2174,7 @@ Rendering videos/show
 Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-31 20:40:18) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-31 20:40:18) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2182,7 +2182,7 @@ Rendering videos/edit
 Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/videos/edit/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-05-31 20:49:05) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-05-31 20:49:05) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -2190,7 +2190,7 @@ Rendering videos/show
 Completed in 8ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#edit (for 127.0.0.1 at 2011-05-31 20:49:35) [GET]
+Processing EpisodesController#edit (for 127.0.0.1 at 2011-05-31 20:49:35) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -2507,7 +2507,7 @@ Rendering season/show
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-01 23:48:22) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-01 23:48:22) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2951,7 +2951,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:05:45) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:05:45) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2959,7 +2959,7 @@ Rendering videos/show
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:06:14) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:06:14) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2967,7 +2967,7 @@ Rendering videos/show
 Completed in 77ms (View: 2, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:07:30) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:07:30) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -2975,7 +2975,7 @@ Rendering videos/show
 Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:08:14) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:08:14) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3007,7 +3007,7 @@ Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:08:29) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:08:29) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3016,7 +3016,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 81ms (View: 11, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:08:59) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:08:59) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3034,7 +3034,7 @@ Rendered home/_season_links (4.6ms)
 Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:10:18) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:10:18) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3043,7 +3043,7 @@ Rendered home/_season_links (4.4ms)
 Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:11:50) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:11:50) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3052,7 +3052,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:12:23) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:12:23) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3061,7 +3061,7 @@ Rendered home/_season_links (4.9ms)
 Completed in 82ms (View: 77, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:13:11) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:13:11) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3070,7 +3070,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:13:54) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:13:54) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3079,7 +3079,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:14:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:14:04) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3088,7 +3088,7 @@ Rendered home/_season_links (4.7ms)
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:14:10) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:14:10) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3097,7 +3097,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:14:21) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:14:21) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.5ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3106,7 +3106,7 @@ Rendered home/_season_links (4.3ms)
 Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:14:59) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:14:59) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3115,7 +3115,7 @@ Rendered home/_season_links (5.2ms)
 Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:15:07) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:15:07) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3124,7 +3124,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:15:09) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:15:09) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3133,7 +3133,7 @@ Rendered home/_season_links (4.3ms)
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:16:59) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:16:59) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3142,7 +3142,7 @@ Rendered home/_season_links (5.2ms)
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:17:09) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:17:09) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3160,7 +3160,7 @@ Rendered home/_season_links (3.8ms)
 Completed in 78ms (View: 73, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:17:32) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:17:32) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3187,7 +3187,7 @@ Rendered home/_season_links (3.8ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:17:40) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:17:40) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3196,7 +3196,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:18:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:18:04) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3205,7 +3205,7 @@ Rendered home/_season_links (6.0ms)
 Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:18:17) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:18:17) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3214,7 +3214,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:18:29) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:18:29) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3223,7 +3223,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:18:45) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:18:45) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3250,7 +3250,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:18:55) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:18:55) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3284,7 +3284,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:19:22) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:19:22) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3293,7 +3293,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:19:41) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:19:41) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3302,7 +3302,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:19:52) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:19:52) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3320,7 +3320,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:20:00) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:20:00) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3345,7 +3345,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-02 00:28:15) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-02 00:28:15) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3388,7 +3388,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 80ms (View: 21, DB: 1) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:44:51) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:44:51) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3397,7 +3397,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:47:59) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:47:59) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3406,7 +3406,7 @@ Rendered home/_season_links (7.1ms)
 Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:48:09) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:48:09) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (2.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3415,7 +3415,7 @@ Rendered home/_season_links (6.7ms)
 Completed in 19ms (View: 10, DB: 2) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:49:19) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:49:19) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3424,7 +3424,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:49:50) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:49:50) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3433,7 +3433,7 @@ Rendered home/_season_links (4.5ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:49:56) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:49:56) [GET]
   Parameters: {"id"=>"2"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3442,7 +3442,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:51:05) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:51:05) [GET]
   Parameters: {"id"=>"2"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 2) [0m
 Rendering template within layouts/application
@@ -3451,7 +3451,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/2]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:51:29) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:51:29) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3460,7 +3460,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:52:23) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:52:23) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3469,7 +3469,7 @@ Rendered home/_season_links (70.5ms)
 Completed in 82ms (View: 76, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:52:46) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:52:46) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3478,7 +3478,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:53:00) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:53:00) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3487,7 +3487,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:53:06) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:53:06) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3496,7 +3496,7 @@ Rendered home/_season_links (4.4ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:53:24) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:53:24) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3505,7 +3505,7 @@ Rendered home/_season_links (10.0ms)
 Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:53:33) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:53:33) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3514,7 +3514,7 @@ Rendered home/_season_links (5.3ms)
 Completed in 75ms (View: 55, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:53:39) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:53:39) [GET]
   Parameters: {"id"=>"1"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3523,7 +3523,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 11:55:38) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 11:55:38) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mVideo Load (0.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 1) [0m
 Rendering template within layouts/application
@@ -3550,7 +3550,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 56ms (View: 49, DB: 2) | 200 OK [http://localhost/season/show?season=1]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 13:59:43) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 13:59:43) [GET]
   Parameters: {"id"=>"12"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 12) [0m
 Rendering template within layouts/application
@@ -3559,7 +3559,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/videos/12]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 13:59:43) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 13:59:43) [GET]
   Parameters: {"id"=>"&image="}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 0) [0m
 
@@ -3884,7 +3884,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 120ms (View: 111, DB: 3) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 14:42:06) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 14:42:06) [GET]
   Parameters: {"id"=>"122"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 122) [0m
 Rendering template within layouts/application
@@ -3902,7 +3902,7 @@ Rendered home/_season_links (72.5ms)
 Completed in 189ms (View: 180, DB: 2) | 200 OK [http://localhost/season/show?season=6]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 14:43:27) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 14:43:27) [GET]
   Parameters: {"id"=>"122"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 122) [0m
 Rendering template within layouts/application
@@ -3938,7 +3938,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 105ms (View: 96, DB: 3) | 200 OK [http://localhost/season/show?season=5]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 14:51:46) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 14:51:46) [GET]
   Parameters: {"id"=>"104"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 104) [0m
 Rendering template within layouts/application
@@ -3956,7 +3956,7 @@ Rendered home/_season_links (3.8ms)
 Completed in 165ms (View: 158, DB: 2) | 200 OK [http://localhost/season/show?season=4]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 15:16:20) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 15:16:20) [GET]
   Parameters: {"id"=>"80"}
   [4;35;1mVideo Load (0.2ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 80) [0m
 Rendering template within layouts/application
@@ -3965,7 +3965,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/videos/80]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 15:16:34) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 15:16:34) [GET]
   Parameters: {"id"=>"69"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 69) [0m
 Rendering template within layouts/application
@@ -3983,7 +3983,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 191ms (View: 162, DB: 23) | 200 OK [http://localhost/season/show?season=5]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-07 19:20:19) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-07 19:20:19) [GET]
   Parameters: {"id"=>"84"}
   [4;36;1mVideo Load (0.2ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 84) [0m
 Rendering template within layouts/application
@@ -4125,7 +4125,7 @@ Rendered home/_season_links (3.9ms)
 Completed in 26ms (View: 18, DB: 2) | 200 OK [http://localhost/season/show?season=15]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:51:11) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:51:11) [GET]
   Parameters: {"id"=>"314"}
   [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 314) [0m
 Rendering template within layouts/application
@@ -4143,7 +4143,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 23ms (View: 15, DB: 3) | 200 OK [http://localhost/season/show?season=9]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:52:49) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:52:49) [GET]
   Parameters: {"id"=>"188"}
   [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4152,7 +4152,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:53:33) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:53:33) [GET]
   Parameters: {"id"=>"188"}
   [4;36;1mVideo Load (1.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4161,7 +4161,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 80ms (View: 73, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:31) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:55:31) [GET]
   Parameters: {"id"=>"188"}
   [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4170,7 +4170,7 @@ Rendered home/_season_links (4.0ms)
 Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:41) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:55:41) [GET]
   Parameters: {"id"=>"188"}
   [4;36;1mVideo Load (1.4ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4179,7 +4179,7 @@ Rendered home/_season_links (5.5ms)
 Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:55:55) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:55:55) [GET]
   Parameters: {"id"=>"188"}
   [4;35;1mVideo Load (2.7ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4188,7 +4188,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 19ms (View: 10, DB: 3) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:56:04) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:56:04) [GET]
   Parameters: {"id"=>"188"}
   [4;36;1mVideo Load (4.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4197,7 +4197,7 @@ Rendered home/_season_links (4.7ms)
 Completed in 24ms (View: 13, DB: 5) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:57:00) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:57:00) [GET]
   Parameters: {"id"=>"188"}
   [4;35;1mVideo Load (1.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4206,7 +4206,7 @@ Rendered home/_season_links (4.3ms)
 Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 13:59:43) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 13:59:43) [GET]
   Parameters: {"id"=>"188"}
   [4;36;1mVideo Load (1.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4215,7 +4215,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/videos/188]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:00:48) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:00:48) [GET]
   Parameters: {"id"=>"188"}
   [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 188) [0m
 Rendering template within layouts/application
@@ -4517,7 +4517,7 @@ Rendered home/_season_links (3.8ms)
 Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=9]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:17:52) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:17:52) [GET]
   Parameters: {"id"=>"199"}
   [4;35;1mVideo Load (1.3ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
 Rendering template within layouts/application
@@ -4526,7 +4526,7 @@ Rendered home/_season_links (4.2ms)
 Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/199]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:23:23) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:23:23) [GET]
   Parameters: {"id"=>"199"}
   [4;36;1mVideo Load (1.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
 Rendering template within layouts/application
@@ -4535,7 +4535,7 @@ Rendered home/_season_links (4.1ms)
 Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/videos/199]
 
 
-Processing VideosController#tally (for 127.0.0.1 at 2011-06-09 14:23:24) [GET]
+Processing EpisodesController#tally (for 127.0.0.1 at 2011-06-09 14:23:24) [GET]
   Parameters: {"id"=>"199"}
 
 ActionController::UnknownAction (No action responded to tally. Actions: create, destroy, edit, index, new, show, and update):
@@ -4553,7 +4553,7 @@ ActionController::UnknownAction (No action responded to tally. Actions: create, 
 Rendering rescues/layout (not_found)
 
 
-Processing VideosController#tally (for 127.0.0.1 at 2011-06-09 14:23:31) [GET]
+Processing EpisodesController#tally (for 127.0.0.1 at 2011-06-09 14:23:31) [GET]
   Parameters: {"id"=>"199"}
 
 ActionController::UnknownAction (No action responded to tally. Actions: create, destroy, edit, index, new, show, and update):
@@ -4571,7 +4571,7 @@ ActionController::UnknownAction (No action responded to tally. Actions: create, 
 Rendering rescues/layout (not_found)
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:25:53) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:25:53) [GET]
   Parameters: {"id"=>"199"}
   [4;35;1mVideo Load (2.7ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
 Rendering template within layouts/application
@@ -4580,7 +4580,7 @@ Rendered home/_season_links (4.6ms)
 Completed in 21ms (View: 13, DB: 3) | 200 OK [http://localhost/videos/199]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:26:20) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:26:20) [GET]
   Parameters: {"id"=>"199"}
   [4;36;1mVideo Load (2.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
 Rendering template within layouts/application
@@ -4589,7 +4589,7 @@ Rendered home/_season_links (5.6ms)
 Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/videos/199]
 
 
-Processing VideosController#show (for 127.0.0.1 at 2011-06-09 14:26:55) [GET]
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:26:55) [GET]
   Parameters: {"id"=>"199"}
   [4;35;1mVideo Load (1.5ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
 Rendering template within layouts/application
@@ -4598,8 +4598,98 @@ Rendered home/_season_links (5.3ms)
 Completed in 20ms (View: 12, DB: 2) | 200 OK [http://localhost/videos/199]
 
 
-Processing VideosController#tally (for 127.0.0.1 at 2011-06-09 14:26:56) [GET]
+Processing EpisodesController#tally (for 127.0.0.1 at 2011-06-09 14:26:56) [GET]
   Parameters: {"id"=>"199"}
+
+ActionController::UnknownAction (No action responded to tally. Actions: create, destroy, edit, index, new, show, and update):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:55:54) [GET]
+  Parameters: {"id"=>"199"}
+  [4;36;1mVideo Load (1.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 199) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (5.4ms)
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://localhost/videos/199]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:55:57) [GET]
+  Parameters: {"season"=>"10"}
+  [4;35;1mVideo Load (2.5ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '10') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 36ms (View: 21, DB: 3) | 200 OK [http://localhost/season/show?season=10]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 14:55:59) [GET]
+  Parameters: {"id"=>"205"}
+  [4;36;1mVideo Load (1.3ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."id" = 205) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/205]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 14:56:02) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 15:33:12) [GET]
+  Parameters: {"season"=>"10"}
+  [4;36;1mVideo Load (62.9ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '10') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 83ms (View: 15, DB: 63) | 200 OK [http://localhost/season/show?season=10]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 15:33:15) [GET]
+  Parameters: {"season"=>"5"}
+  [4;35;1mVideo Load (2.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."season" = '5') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 22ms (View: 14, DB: 2) | 200 OK [http://localhost/season/show?season=5]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-09 15:34:29) [GET]
+  Parameters: {"season"=>"6"}
+  [4;36;1mVideo Load (2.5ms)[0m   [0;1mSELECT * FROM "videos" WHERE ("videos"."season" = '6') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=6]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-09 15:35:45) [GET]
+  Parameters: {"id"=>"123"}
+  [4;35;1mVideo Load (1.4ms)[0m   [0mSELECT * FROM "videos" WHERE ("videos"."id" = 123) [0m
+Rendering template within layouts/application
+Rendering videos/show
+Rendered home/_season_links (4.1ms)
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/videos/123]
+
+
+Processing EpisodesController#tally (for 127.0.0.1 at 2011-06-09 15:35:57) [GET]
+  Parameters: {"id"=>"123"}
 
 ActionController::UnknownAction (No action responded to tally. Actions: create, destroy, edit, index, new, show, and update):
   /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'

@@ -11,7 +11,7 @@
 
 ActiveRecord::Schema.define(:version => 20110517165229) do
 
-  create_table "videos", :force => true do |t|
+  create_table "episodes", :force => true do |t|
     t.string   "title"
     t.integer   "season"
     t.integer   "episode"

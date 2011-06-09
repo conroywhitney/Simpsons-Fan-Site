@@ -1,4 +1,4 @@
-class Video < ActiveRecord::Base
+class Episode < ActiveRecord::Base
 
   def source
     return "#{self.url}&amp;image=#{self.thumbnail}"

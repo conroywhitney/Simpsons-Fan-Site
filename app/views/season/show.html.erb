@@ -9,10 +9,10 @@
     <% @episodes.each do |episode| %>
         <li class="episode">
           <%= link_to "#{episode.title}",
-                      {:controller => "videos", :action => "show", :id => episode},
+                      {:controller => "episodes", :action => "show", :id => episode},
                       :class => "episode-link" %>
 
-          <a href="<%= url_for :controller => "videos",
+          <a href="<%= url_for :controller => "episodes",
                                :action => "show",
                                :id => episode %>">
               <img src="<%= episode.thumbnail %>" class="episode-thumbnail" title="<%= episode.summary %>" />

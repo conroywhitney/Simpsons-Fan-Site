@@ -1,0 +1,15 @@
+
+
+<h1>The Simpsons Episodes</h1>
+
+<ul>
+
+<% @episodes.each do |episode| %>
+    <li><%= link_to "#{episode.season_label} - #{episode.title}", episode %></li>
+<% end %>
+
+</ul>
+
+<br />
+
+<%= link_to 'New episode', new_episode_path %>
