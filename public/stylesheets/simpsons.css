@@ -145,13 +145,13 @@ div.clearfix {
     float:right;
     font-size:16pt;
 }
-#episode_stats ul {
+#episode_stats ul#stats {
     padding:0px;
     margin:0px;
 }
-#episode_stats ul li {
+#episode_stats ul#stats li {
     list-style-type:none;
-    margin:5px 0px;
+
 }
 .stats_label {
     float:left;
