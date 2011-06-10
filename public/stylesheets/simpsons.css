@@ -235,5 +235,10 @@ h2 {
 
 #footer ul li {
     float:left;
-    margin-left:75px;
+    margin-left:80px;
+}
+
+#footer a {
+    color:#000;
+    text-decoration:none;
 }

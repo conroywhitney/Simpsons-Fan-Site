@@ -1,9 +1,7 @@
 <ul id="season_links">
     <li id="season_link_label"><a href="/">Seasons</a></li>
 <% (1..9).each do |i| %>
-    <li class="single-digit"><%= link_to i, {:controller => "season", :action => "show", :season => i} %></li>
-<% end %>
+    <li class="single-digit"><%= link_to i, {:controller => "season", :action => "show", :season => i} %></li><% end %>
 <% (10..22).each do |i| %>
-    <li class="double-digit"><%= link_to i, {:controller => "season", :action => "show", :season => i} %></li>
-<% end %>
-</ul>
+    <li class="double-digit"><%= link_to i, {:controller => "season", :action => "show", :season => i} %></li><% end %>
+</ul><!-- /season_links -->

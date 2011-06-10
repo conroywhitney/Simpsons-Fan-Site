@@ -6,21 +6,23 @@
     xml:lang="en"
     lang="en"
     xmlns:og="http://ogp.me/ns#"
-	xmlns:fb="http://www.facebook.com/2008/fbml">
+    xmlns:fb="http://www.facebook.com/2008/fbml">
 
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title><%= @page_title %></title>
+
+  <title><%= yield :page_title %></title>
+  <meta name="description" content="<%= yield :meta_description %>" />
+  <meta name="keywords" content="the simpsons, simpsons, watch simpsons, simpsons episodes, <%= yield :meta_keywords %>" />
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <%= ajaxful_rating_style %>
 
   <%= stylesheet_link_tag 'simpsons' %>
+  <%= ajaxful_rating_style %>
 
   <%= yield :head_og %>
-
-<head>
 </head>
+
 <body>
 
 <div id="header">
@@ -33,8 +35,10 @@
 <div id="container">
     <div id="content">
 
-        <p style="color: green"><%= notice %></p>
+        <!-- Flash Notice -->
+        <div id="flash_notice"><%= notice %></div>
 
+        <!-- Page Content -->
         <%= yield %>
 
     </div><!-- /content -->
@@ -42,17 +46,20 @@
 
 <div id="footer">
     <ul>
-        <li>About</li>
-        <li>Privacy Policy and Terms</li>
-        <li>Legal Disclaimer and DMCA</li>
-        <li>Contact</li>
+        <li><%= link_to "About", :controller => "static", :action => "about" %></li>
+        <li><%= link_to "Privacy Policy &amp; Terms", :controller => "static", :action => "privacy-terms" %></li>
+        <li><%= link_to "Legal Disclaimer &amp; DMCA", :controller => "static", :action => "legal-DMCA" %></li>
+        <li><%= link_to "Contact", :controller => "static", :action => "contact" %></li>
     </ul>
-</div>
+</div><!-- /footer -->
 
 <!-- Facebook -->
 <script src="http://connect.facebook.net/en_US/all.js#appId=103144423110785&amp;xfbml=1"></script>
 
+<!-- Page-Specific Javascript -->
+<script type="text/javascript">
 <%= yield :javascript %>
+</script>
 
 </body>
 </html>
