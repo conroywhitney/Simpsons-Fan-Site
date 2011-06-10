@@ -45,7 +45,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="94" selection-start="268" selection-end="268" vertical-scroll-proportion="-3.5555556">
+            <state line="24" column="114" selection-start="660" selection-end="943" vertical-scroll-proportion="-14.222222">
               <folding />
             </state>
           </provider>
@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_sitemap.builder" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="google_sitemap.builder" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="54" selection-start="286" selection-end="286" vertical-scroll-proportion="0.29402757">
+            <state line="12" column="54" selection-start="286" selection-end="286" vertical-scroll-proportion="-7.111111">
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="1051" selection-end="1051" vertical-scroll-proportion="-4.740741">
+            <state line="2" column="71" selection-start="202" selection-end="202" vertical-scroll-proportion="-1.1851852">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,52 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="104" selection-start="1405" selection-end="1418" vertical-scroll-proportion="-11.148149">
+            <state line="48" column="98" selection-start="1526" selection-end="1526" vertical-scroll-proportion="-11.740741">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/static_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="8" selection-start="149" selection-end="149" vertical-scroll-proportion="-8.888889">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static/about.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="44" selection-start="0" selection-end="2581" vertical-scroll-proportion="-4.740741">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static/contact.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="39" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-4.148148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="legal_DMCA.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="48" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.63705975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="privacy_terms.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="65" selection-start="2580" selection-end="2580" vertical-scroll-proportion="-4.148148">
               <folding />
             </state>
           </provider>
@@ -128,14 +173,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/home/_season_links.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/ajaxful_rating.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20110610174502_add_cached_slug_to_episodes.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
@@ -144,6 +182,13 @@
         <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/seo_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/seo/google_sitemap.builder" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/static_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/static/about.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static/contact.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static/privacy_terms.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb" />
       </list>
     </option>
   </component>
@@ -546,6 +591,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simpsons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Simpsons-RoR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sessions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -742,6 +809,11 @@
     <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/static" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: Simpsons">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -1017,58 +1089,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="96" selection-end="96" vertical-scroll-proportion="-2.3703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="45" selection-start="2018" selection-end="2018" vertical-scroll-proportion="-14.703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="642" selection-end="642" vertical-scroll-proportion="0.58805513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.07350689">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="67" selection-start="186" selection-end="186" vertical-scroll-proportion="0.07350689">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="265" column="18" selection-start="4081" selection-end="4081" vertical-scroll-proportion="-7.6037736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="94" selection-start="268" selection-end="268" vertical-scroll-proportion="-3.5555556">
           <folding />
         </state>
       </provider>
@@ -1115,16 +1138,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="1051" selection-end="1051" vertical-scroll-proportion="-4.740741">
+        <state line="12" column="54" selection-start="286" selection-end="286" vertical-scroll-proportion="-7.111111">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="286" selection-end="286" vertical-scroll-proportion="0.29402757">
+        <state line="2" column="71" selection-start="202" selection-end="202" vertical-scroll-proportion="-1.1851852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="98" selection-start="1526" selection-end="1526" vertical-scroll-proportion="-11.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="149" selection-end="149" vertical-scroll-proportion="-8.888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="114" selection-start="660" selection-end="943" vertical-scroll-proportion="-14.222222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/about.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="44" selection-start="0" selection-end="2581" vertical-scroll-proportion="-4.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/contact.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-4.148148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="2580" selection-end="2580" vertical-scroll-proportion="-4.148148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="48" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.63705975">
           <folding />
         </state>
       </provider>

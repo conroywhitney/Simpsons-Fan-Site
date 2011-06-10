@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.connect 'privacy-terms', :controller => 'static', :action => 'privacy-terms'
-  map.connect 'legal-DMCA', :controller => 'static', :action => 'legal-DMCA'
+  map.connect 'privacy-terms', :controller => 'static', :action => 'privacy_terms'
+  map.connect 'legal-DMCA', :controller => 'static', :action => 'legal_DMCA'
   map.connect 'about', :controller => 'static', :action => 'about'
   map.connect 'contact', :controller => 'static', :action => 'contact'
 

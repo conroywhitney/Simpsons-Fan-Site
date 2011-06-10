@@ -24165,3 +24165,167 @@ Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:27:54) [GET]
   [4;35;1mEpisode Load (31.5ms)[0m   [0mSELECT * FROM "episodes" ORDER BY season ASC, episode ASC[0m
 Rendering seo/google_sitemap
 Completed in 510ms (View: 451, DB: 32) | 200 OK [http://localhost/sitemap.xml]
+
+
+Processing ApplicationController#about (for 127.0.0.1 at 2011-06-10 14:28:58) [GET]
+
+NameError (uninitialized constant StaticController):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#privacy-terms (for 127.0.0.1 at 2011-06-10 14:29:01) [GET]
+
+NameError (uninitialized constant StaticController):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:31:03) [GET]
+  Parameters: {"id"=>"season-15-episode-2-my-mother-the-carjacker"}
+  [4;36;1mEpisode Load (1.8ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-15-episode-2-my-mother-the-carjacker' OR cached_slug LIKE 'season-15-episode-2-my-mother-the-carjacker%') LIMIT 1[0m
+  [4;35;1mEpisode Load (0.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 316) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 314) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 97ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-15-episode-2-my-mother-the-carjacker]
+
+
+Processing StaticController#about (for 127.0.0.1 at 2011-06-10 14:32:41) [GET]
+Rendering template within layouts/application
+Rendering static/about
+Rendered home/_season_links (4.6ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing StaticController#about (for 127.0.0.1 at 2011-06-10 14:33:14) [GET]
+Rendering template within layouts/application
+Rendering static/about
+Rendered home/_season_links (3.9ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing StaticController#about (for 127.0.0.1 at 2011-06-10 14:33:37) [GET]
+Rendering template within layouts/application
+Rendering static/about
+Rendered home/_season_links (3.6ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing StaticController#about (for 127.0.0.1 at 2011-06-10 14:34:53) [GET]
+Rendering template within layouts/application
+Rendering static/about
+Rendered home/_season_links (6.2ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-10 14:34:56) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (3.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-10 14:34:58) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (3.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-10 14:35:00) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (3.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-10 14:35:02) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (3.7ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-10 14:35:13) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (3.7ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-10 14:35:15) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (3.7ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#contact (for 127.0.0.1 at 2011-06-10 14:35:16) [GET]
+Rendering template within layouts/application
+Rendering static/contact
+Rendered home/_season_links (3.6ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing StaticController#about (for 127.0.0.1 at 2011-06-10 14:35:18) [GET]
+Rendering template within layouts/application
+Rendering static/about
+Rendered home/_season_links (3.9ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 14:35:21) [GET]
+  Parameters: {"season"=>"5"}
+  [4;35;1mEpisode Load (2.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '5') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.3ms)
+Completed in 28ms (View: 15, DB: 3) | 200 OK [http://localhost/season/5/episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:35:22) [GET]
+  Parameters: {"id"=>"season-5-episode-2-cape-feare"}
+  [4;36;1mEpisode Load (0.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-2-cape-feare' OR cached_slug LIKE 'season-5-episode-2-cape-feare%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 86) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 84) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (64.5ms)
+Completed in 86ms (View: 73, DB: 2) | 200 OK [http://localhost/watch-video/season-5-episode-2-cape-feare]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:35:25) [GET]
+  Parameters: {"id"=>"season-5-episode-3-homer-goes-to-college"}
+  [4;35;1mEpisode Load (0.9ms)[0m   [0mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-3-homer-goes-to-college' OR cached_slug LIKE 'season-5-episode-3-homer-goes-to-college%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 87) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 85) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 23ms (View: 11, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-3-homer-goes-to-college]
