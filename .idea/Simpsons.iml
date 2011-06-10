@@ -12,15 +12,15 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="ajaxful_rating" version="0" bound="GREATER_OR_EQUAL" url="file://~/sw/gems/nokogiri" git="false" path="true" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="ajaxful_rating" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ajaxful_rating" version="2.2.8.2" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
