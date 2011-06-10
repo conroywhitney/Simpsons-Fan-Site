@@ -13367,3 +13367,109 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (4.7ms)
 Completed in 21ms (View: 12, DB: 2) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:01:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:01:17) [GET]
+  Parameters: {"season"=>"1"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:02:21) [GET]
+  Parameters: {"season"=>"1"}
+  [4;35;1mEpisode Load (2.0ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+
+ActionView::TemplateError (undefined method `summary' for nil:NilClass) on line #27 of app/views/season/show.html.erb:
+24: 
+25: <% content_for :header do %>*Simpsons - Season <%= @season %><% end %>
+26: <% content_for :page_title do %>The Simpsons - Season <%= @season %> - Watch Online Free<% end %>
+27: <% content_for :meta_description do %><%= @episode.summary %><% end %>
+28: <% content_for :meta_keywords do %>simpsons <%= @episode.season %>, simpsons season <%= @episode.season %> episode <%= @episode.episode %><% end %>
+
+    app/views/season/show.html.erb:27
+    app/views/season/show.html.erb:27
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:03:03) [GET]
+  Parameters: {"season"=>"1"}
+  [4;36;1mEpisode Load (2.0ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+
+ActionView::TemplateError (undefined method `season' for nil:NilClass) on line #28 of app/views/season/show.html.erb:
+25: <% content_for :header do %>*Simpsons - Season <%= @season %><% end %>
+26: <% content_for :page_title do %>The Simpsons - Season <%= @season %> - Watch Online Free<% end %>
+27: <% content_for :meta_description do %>Watch Simpsons episodes from Season <%= @season %> online for free.<% end %>
+28: <% content_for :meta_keywords do %>simpsons season <%= @season %>, simpsons season <%= @episode.season %> episodes<% end %>
+
+    app/views/season/show.html.erb:28
+    app/views/season/show.html.erb:28
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:03:14) [GET]
+  Parameters: {"season"=>"1"}
+  [4;35;1mEpisode Load (1.9ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (6.0ms)
+Completed in 28ms (View: 17, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:03:39) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mEpisode Load (1.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.9ms)
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/episodes/8]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:03:45) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.9ms)
+Completed in 86ms (View: 75, DB: 2) | 200 OK [http://localhost/season/show?season=13]
