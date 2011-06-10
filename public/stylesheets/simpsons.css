@@ -201,7 +201,7 @@ h2 {
     padding:5px;
 }
 
-#episode_title {
+.episode-title {
     height:56px;
     overflow:hidden;
     margin:5px 0px;
@@ -242,3 +242,58 @@ h2 {
     color:#000;
     text-decoration:none;
 }
+
+/*
+* ---------------------------------------------------------------------------------
+* Ajaxful-Rating
+* Style by Rogie http://www.komodomedia.com/blog/2007/01/css-star-rating-redux/
+* ---------------------------------------------------------------------------------
+*/
+
+.ajaxful-rating,
+.ajaxful-rating a:hover,
+.ajaxful-rating a:active,
+.ajaxful-rating a:focus,
+.ajaxful-rating .show-value{
+    background: url(/images/ajaxful_rating/star.png) left -1000px repeat-x;
+}
+.ajaxful-rating{
+    position: relative;
+    /*width: 125px; this is setted dynamically */
+    height: 50px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-position: left top;
+}
+ul.ajaxful-rating {
+    width:150px;
+}
+.ajaxful-rating li{ display: inline; }
+.ajaxful-rating a,
+.ajaxful-rating span,
+.ajaxful-rating .show-value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -1000em;
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+}
+.ajaxful-rating a:hover,
+.ajaxful-rating a:active,
+.ajaxful-rating a:focus{
+    background-position: left bottom;
+}
+.ajaxful-rating .show-value{
+    z-index: 1;
+    background-position: left center;
+}
+.ajaxful-rating {width: 75px; }
+.ajaxful-rating .stars-1 {z-index: 4; width: 33.3333333333333%; }
+.ajaxful-rating .stars-2 {z-index: 3; width: 66.6666666666667%; }
+.ajaxful-rating .stars-3 {z-index: 2; width: 100.0%; }

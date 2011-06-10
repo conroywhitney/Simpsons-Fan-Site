@@ -1,15 +1,3 @@
-
-<% content_for :head_og do %>
-    <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)"/>
-    <meta property="og:type" content="tv_show"/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:site_name" content="The Simpsons"/>
-    <meta property="og:description" content="<%= @episode.summary %>"/>
-<% end %>
-
-<% content_for :header do %>*Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %><% end %>
-
 <div id="episode_content">
 
     <h2><%= @episode.title %></h2>
@@ -35,11 +23,27 @@
 
 </div>
 
+<% content_for :head_og do %>
+    <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)"/>
+    <meta property="og:type" content="tv_show"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="The Simpsons"/>
+    <meta property="og:description" content="<%= @episode.summary %>"/>
+<% end %>
+
+<% content_for :header do %>*Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %><% end %>
+<% content_for :page_title do %>The Simpsons - Season <%= @episode.season %>, Episode <%= @episode.episode %> - "<%= @episode.title %>"<% end %>
+<% content_for :meta_description do %><%= @episode.summary %><% end %>
+<% content_for :meta_keywords do %>simpsons <%= @episode.season %>, simpsons season <%= @episode.season %> episode <%= @episode.episode %><% end %>
+
 <% content_for :javascript do %>
-<script type="text/javascript">
     $("#video_link").click(function() {
        $.ajax({
-          url: "<%= url_for :controller => "episode_views", :action => "tally", :episode_id => @episode.id, :user_id => @user_id %>",
+          url: "<%= url_for :controller => "episode_views",
+                            :action => "tally",
+                            :episode_id => @episode.id,
+                            :user_id => @user_id %>",
           context: document.body,
           success: function(){
             $("#last_watched").html("Today");
@@ -49,5 +53,4 @@
           }
         });
     });
-</script>
 <% end %>

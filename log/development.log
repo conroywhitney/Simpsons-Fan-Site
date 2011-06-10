@@ -13124,3 +13124,246 @@ Rendering template within layouts/application
 Rendering season/show
 Rendered home/_season_links (3.8ms)
 Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 12:46:00) [GET]
+  Parameters: {"season"=>"1"}
+  [4;36;1mEpisode Load (2.0ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.7ms)
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 12:46:17) [GET]
+  Parameters: {"season"=>"1"}
+  [4;35;1mEpisode Load (2.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.9ms)
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 12:46:30) [GET]
+  Parameters: {"season"=>"1"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=1]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:46:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.9ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:48:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.1ms)
+Completed in 82ms (View: 11, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:49:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.1ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:49:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:50:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (64.9ms)
+Completed in 84ms (View: 76, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:50:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:51:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.3ms)
+Completed in 25ms (View: 15, DB: 2) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:53:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:53:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:54:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 29ms (View: 16, DB: 2) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:54:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:55:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:55:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:56:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.3ms)
+Completed in 25ms (View: 16, DB: 2) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:56:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.3ms)
+Completed in 95ms (View: 17, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:56:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (5.9ms)
+Completed in 54ms (View: 43, DB: 2) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:57:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:57:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.1ms)
+Completed in 87ms (View: 79, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:58:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.5ms)
+Completed in 26ms (View: 17, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:59:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.5ms)
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:59:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.1ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 12:59:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.9ms)
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:00:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.0ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/episodes/3]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:00:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.7ms)
+Completed in 21ms (View: 12, DB: 2) | 200 OK [http://localhost/episodes/3]
