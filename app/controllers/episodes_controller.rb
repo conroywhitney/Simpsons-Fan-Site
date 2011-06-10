@@ -21,9 +21,12 @@ class EpisodesController < ApplicationController
   end
 
   def ensure_current_url
-    @episode = Episode.first(:conditions => ["id = ? OR cached_slug LIKE ?", params[:id], params[:id] + '%'])
+    if params[:slug]
+        @episode = Episode.first(:conditions => ["cached_slug LIKE ?", params[:slug] + '%'])
+        redirect_to @episode, :status => :moved_permanently unless params[:slug] == @episode.cached_slug
+    end
+
     #redirect_to @episode, :status => :moved_permanently unless @episode.friendly_id_status.best?
-    redirect_to @episode, :status => :moved_permanently unless params[:id] == @episode.cached_slug
   end
 
   def rate

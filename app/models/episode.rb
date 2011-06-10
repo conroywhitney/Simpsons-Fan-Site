@@ -6,11 +6,19 @@ class Episode < ActiveRecord::Base
                     :max_length => 50   # don't use slugs larger than 50 bytes
 
   def self.find_previous(episode)
-      return self.find(episode.id - 1)
+      if episode.id > 3
+        return self.find(episode.id - 1)
+      else
+        return nil
+      end
   end
 
   def self.find_next(episode)
-      return self.find(episode.id + 1)
+      if episode.id < 483
+          return self.find(episode.id + 1)
+      else
+          return nil
+      end
   end
 
   def source

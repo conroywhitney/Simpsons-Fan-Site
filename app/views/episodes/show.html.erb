@@ -23,13 +23,17 @@
 
     <div class="clearfix"></div>
 
+    <% unless @previous_episode.nil? %>
     <div id="btn_prev" class="yellow-box">
-        <%= link_to "&laquo; Previous Episode", :controller => :episodes, :action => :show, :id => @previous_episode %>
+        <a href="<%= episode_url :slug => @previous_episode %>">&laquo; Previous Episode</a>
     </div>
+    <% end %>
 
+    <% unless @next_episode.nil? %>
     <div id="btn_next" class="yellow-box">
-        <%= link_to "Next Episode &raquo;", :controller => :episodes, :action => :show, :id => @next_episode %>
+        <a href="<%= episode_url :slug => @next_episode %>">Next Episode &raquo;</a>
     </div>
+    <% end %>
 
 </div>
 

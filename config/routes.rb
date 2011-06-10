@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "sitemap.xml", :controller => "seo", :action => "sitemap"
 
   #map.episode 'season/:season/episode/:episode/:title', :controller => 'episodes', :action => 'show', :season => :season, :episode => :episode
-  map.watch_episode '/watch-video/:id', :controller => 'episodes', :action => 'show'
+  map.episode '/watch-video/:slug', :controller => 'episodes', :action => 'show'
   map.season 'season/:season/episodes', :controller => 'season', :action => 'show', :season => :season
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
