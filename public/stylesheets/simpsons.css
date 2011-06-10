@@ -12,8 +12,8 @@ body {
 }
 
 html, body, #container { height: 100%; }
-body > #container { height: auto; min-height: 100%; }
-#content { padding-bottom:5em; padding-top:6em; }
+body > #container { height: auto; min-height: 100%; width:900px; margin:0px auto; }
+#content { padding-bottom:2em; padding-top:3em; }
 
 li.episode {
     display:block;
@@ -102,22 +102,19 @@ div#content {
     width:900px;
     text-align:center;
     margin:0px auto;
-}
-
-h1.homepage {
-    font-size:48pt;
-    margin:5px;
+    height:100%;
+    float:left;
 }
 
 img#simpsons-characters {
-    width:900px;
+    width:850px;
 }
 
 ul#season-episodes {
     margin:5px auto;
     width:875px;
-    padding:5px 5px 30px 5px;
-    height:1325px;
+    padding:5px;
+    float:left;
 }
 
 div.clearfix {
@@ -197,7 +194,7 @@ h2 {
 }
 #episode_summary {
     width:475px;
-    height:362px;
+    height:367px;
     float:right;
     overflow-y: auto;
     overflow-x: hidden;
@@ -216,14 +213,15 @@ h2 {
     clear: both;
     position: relative;
     z-index: 10;
-    height: 5em;
 }
 
 #header {
     margin-bottom: -5em;
+    height: 5em;
 }
 
 #footer {
+    height: 5em;
     margin-top: -5em;
     text-align:center;
 }
