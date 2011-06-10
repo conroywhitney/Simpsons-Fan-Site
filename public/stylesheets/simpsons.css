@@ -16,7 +16,8 @@ li.episode {
     margin:5px;
     width:200px;
     height:200px;
-    border:2px solid #000;
+    /*border:2px solid #000;*/
+    padding:4px;
 }
 
 li.episode:hover {
@@ -25,19 +26,20 @@ li.episode:hover {
 
 li.episode a {
     display:block;
-    width:100%;
+    width:200px;
+    height:200px;
     color:#000;
     text-decoration:none;
-    margin:5px auto;
-}
-
-li.episode a.episode-link {
-    height:18px;
+    margin:0px;
+    margin-top:-20px;
+    padding:0px;
 }
 
 li.episode img {
-    margin:12px 12px 0px 12px;
-    width:150px;
+    margin:5px 10px;
+    width:175px;
+    height:128px;
+    box-shadow:rgba(0,0,0,0.5) 0px 0px 12px;
 }
 
 #embedded_video {
@@ -132,7 +134,8 @@ h2 {
 }
 
 .season-label {
-    float:bottom;
+    text-align:center;
+    width:200px;
 }
 
 #video_thumb {
@@ -188,5 +191,10 @@ h2 {
     overflow-y: auto;
     overflow-x: hidden;
     padding:5px;
-    background:#FFF;
+}
+
+#episode_title {
+    height:58px;
+    overflow:hidden;
+    margin:5px 0px;
 }

@@ -7,20 +7,21 @@
 <% else %>
     <ul id="season-episodes">
     <% @episodes.each do |episode| %>
-        <li class="episode">
-          <%= link_to "#{episode.title}",
-                      {:controller => "episodes", :action => "show", :id => episode},
-                      :class => "episode-link" %>
+        <li class="episode yellow-box">
+            <a href="<%= url_for :controller => "episodes",
+                                 :action => "show",
+                                 :id => episode %>"
+               title="<%= episode.summary %>">
+                <div id="episode_title">
+                    <h3><%= episode.title %></h3>
+                </div>
 
-          <a href="<%= url_for :controller => "episodes",
-                               :action => "show",
-                               :id => episode %>">
-              <img src="<%= episode.thumbnail %>" class="episode-thumbnail" title="<%= episode.summary %>" />
-          </a>
+                <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
 
-          <div class="clearfix"></div>
+                <div class="clearfix"></div>
 
-          <div class="season-label"><%= episode.season_label_short %></div>
+                <div class="season-label"><%= episode.season_label %></div>
+            </a>
 
         </li>
     <% end %>
