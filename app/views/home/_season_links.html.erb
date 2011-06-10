@@ -1,5 +1,5 @@
 <ul id="season_links">
-    <li id="season_link_label">Seasons</li>
+    <li id="season_link_label"><a href="/">Seasons</a></li>
 <% (1..9).each do |i| %>
     <li class="single-digit"><%= link_to i, {:controller => "season", :action => "show", :season => i} %></li>
 <% end %>

@@ -23,16 +23,36 @@
 </head>
 <body>
 
-<div id="content">
+<div id="header">
+    <%= render :partial => "home/season_links" %>
 
-    <p style="color: green"><%= notice %></p>
+    <h1><%= yield :header %></h1>
+    <h2><%= yield :subheader %></h2>
+</div>
 
-    <%= yield %>
+<div id="container">
+    <div id="content">
 
-</div><!-- /content -->
+        <p style="color: green"><%= notice %></p>
+
+        <%= yield %>
+
+    </div><!-- /content -->
+</div><!-- /container -->
+
+<div id="footer">
+    <ul>
+        <li>About</li>
+        <li>Privacy Policy and Terms</li>
+        <li>Legal Disclaimer and DMCA</li>
+        <li>Contact</li>
+    </ul>
+</div>
 
 <!-- Facebook -->
 <script src="http://connect.facebook.net/en_US/all.js#appId=103144423110785&amp;xfbml=1"></script>
+
+<%= yield :javascript %>
 
 </body>
 </html>

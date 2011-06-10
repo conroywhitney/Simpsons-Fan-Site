@@ -7,7 +7,13 @@ body {
     font-family:simpson_font;
     background-color:#FFD90F;
     text-align:center;
+    padding:0px;
+    margin:0px;
 }
+
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+#content { padding-bottom:5em; padding-top:6em; }
 
 li.episode {
     display:block;
@@ -51,7 +57,7 @@ li.episode img {
 ul#season_links {
     width:890px;
     height:30px;
-    margin:5px auto;
+    margin:0 auto 5px;
     padding:5px;
 }
 
@@ -80,6 +86,10 @@ ul#season_links li a:hover {
     font-size:28pt;
 }
 
+ul#season_links #season_link_label a:hover {
+    font-size:16pt;
+}
+
 #season_link_label {
     margin-right:25px;
 }
@@ -91,7 +101,7 @@ ul#season_links li.double-digit a:hover {
 div#content {
     width:900px;
     text-align:center;
-    margin:25px auto;
+    margin:0px auto;
 }
 
 h1.homepage {
@@ -104,9 +114,10 @@ img#simpsons-characters {
 }
 
 ul#season-episodes {
-    margin:0px auto;
+    margin:5px auto;
     width:875px;
-    padding:5px;
+    padding:5px 5px 30px 5px;
+    height:1325px;
 }
 
 div.clearfix {
@@ -115,7 +126,7 @@ div.clearfix {
 
 h1 {
     font-size:24pt;
-    margin:15px 5px 5px 5px;
+    margin:5px 5px 5px 5px;
     letter-spacing:3px;
 }
 
@@ -197,4 +208,34 @@ h2 {
     height:58px;
     overflow:hidden;
     margin:5px 0px;
+}
+
+#header, #footer {
+    box-shadow:rgba(0,0,0,0.5) 0px 0px 24px;
+    width:100%;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 5em;
+}
+
+#header {
+    margin-bottom: -5em;
+}
+
+#footer {
+    margin-top: -5em;
+    text-align:center;
+}
+
+#footer ul {
+    list-style:none;
+    margin:0px auto;
+    padding:35px;
+    width:875px;
+}
+
+#footer ul li {
+    float:left;
+    margin-left:75px;
 }

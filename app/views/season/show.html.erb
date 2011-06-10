@@ -1,6 +1,4 @@
-<h1>*Simpsons - Season <%= @season %></h1>
-
-<%= render :partial => "home/season_links" %>
+<% content_for :header do %>*Simpsons - Season <%= @season %><% end %>
 
 <% if @episodes.nil? %>
     <h2>No Episodes Found</h2>
@@ -18,12 +16,11 @@
 
                 <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
 
-                <div class="clearfix"></div>
-
                 <div class="season-label"><%= episode.season_label %></div>
             </a>
-
         </li>
     <% end %>
     </ul>
+
+    <div class="clearfix"></div>
 <% end %>
