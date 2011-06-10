@@ -41,13 +41,13 @@ li.episode img {
 }
 
 #embedded_video {
-    float:right;
+    float:left;
     width:400px;
-    margin:5px;
+    margin:0px;
 }
 
 ul#season_links {
-    width:875px;
+    width:890px;
     height:30px;
     margin:5px auto;
     padding:5px;
@@ -62,11 +62,11 @@ ul#season_links li {
 }
 
 ul#season_links li.single-digit {
-    width:25px;
+    width:28px;
 }
 
 ul#season_links li.double-digit {
-    width:40px;
+    width:41px;
 }
 
 ul#season_links li a {
@@ -79,7 +79,7 @@ ul#season_links li a:hover {
 }
 
 #season_link_label {
-    margin-right:5px;
+    margin-right:25px;
 }
 
 ul#season_links li.double-digit a:hover {
@@ -111,20 +111,21 @@ div.clearfix {
     clear:both;
 }
 
-#episode_content h1 {
-    font-size:18pt;
+h1 {
+    font-size:24pt;
     margin:15px 5px 5px 5px;
+    letter-spacing:3px;
 }
 
-#episode_content h2 {
-    font-size:24pt;
+h2 {
+    font-size:32pt;
     margin:5px 5px 20px 5px;
+    letter-spacing:3px;
 }
 
 #episode_content h3 {
     font-family:Comic Sans MS;
     font-size:12pt;
-    width:475px;
     float:left;
     margin:5px 5px 5px 5px;
     text-align:left;
@@ -138,6 +139,7 @@ div.clearfix {
     width:400px;
     height:300px;
     border:0px;
+    box-shadow:rgba(0,0,0,0.5) 0px 0px 24px;
 }
 
 #episode_stats {
@@ -147,7 +149,7 @@ div.clearfix {
 }
 #episode_stats ul#stats {
     padding:0px;
-    margin:0px;
+    margin:0px 5px;
 }
 #episode_stats ul#stats li {
     list-style-type:none;
@@ -167,4 +169,24 @@ div.clearfix {
 }
 #rating_label {
     margin-top:15px;
+}
+
+.yellow-box {
+    box-shadow:rgba(0,0,0,0.5) 0px 0px 24px;
+    -webkit-gradient(linear, 0% 0%, 0% 50%, from(#FFD90F), to(#FFFFFF));
+    border-radius:12px;
+}
+.white-box {
+    box-shadow:rgba(0,0,0,0.5) 0px 0px 24px;
+    -webkit-gradient(linear, 0% 0%, 0% 50%, from(#FFD90F), to(#FFFFFF));
+    border-radius:12px;
+}
+#episode_summary {
+    width:475px;
+    height:362px;
+    float:right;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:5px;
+    background:#FFF;
 }

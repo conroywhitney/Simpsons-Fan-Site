@@ -27,16 +27,16 @@
       <file leaf-file-name="simpsons.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="4" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.32506204">
+            <state line="48" column="9" selection-start="668" selection-end="674" vertical-scroll-proportion="0.3325062">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajaxful_rating.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/ajaxful_rating.css">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="19" selection-start="768" selection-end="768" vertical-scroll-proportion="-7.111111">
+            <state line="20" column="32" selection-start="794" selection-end="805" vertical-scroll-proportion="-5.2222223">
               <folding />
             </state>
           </provider>
@@ -46,15 +46,6 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/episodes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="38" selection-start="503" selection-end="503" vertical-scroll-proportion="-7.6666665">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="928" selection-end="933" vertical-scroll-proportion="-7.5925927">
               <folding />
             </state>
           </provider>
@@ -114,6 +105,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ajaxful_rating.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/ajaxful_rating.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="19" selection-start="768" selection-end="768" vertical-scroll-proportion="-7.111111">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/models/episode_view.rb" />
         <option value="$PROJECT_DIR$/app/controllers/episodes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/ajaxful_rating.css" />
+        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
       </list>
     </option>
@@ -1083,13 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="928" selection-end="933" vertical-scroll-proportion="-7.5925927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/ajaxful_rating.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="768" selection-end="768" vertical-scroll-proportion="-7.111111">
@@ -1097,9 +1090,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="794" selection-end="805" vertical-scroll-proportion="-5.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="4" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.32506204">
+        <state line="48" column="9" selection-start="668" selection-end="674" vertical-scroll-proportion="0.3325062">
           <folding />
         </state>
       </provider>
