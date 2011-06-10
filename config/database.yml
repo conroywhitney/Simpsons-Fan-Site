@@ -16,7 +16,10 @@ test:
   timeout: 5000
 
 production:
+  encoding: unicode
   adapter: postgresql
-  database: simpsons
-  pool: 5
-  timeout: 5000
+  username: hkzkdcuigt
+  port: 5432
+  host: ec2-50-16-215-162.compute-1.amazonaws.com
+  database: hkzkdcuigt
+  password: qEHcZ7j8KmRb8rzm6GrK
