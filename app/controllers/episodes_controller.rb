@@ -6,8 +6,8 @@ class EpisodesController < ApplicationController
   end
 
   def show
-    @episode = Episode.find(params[:id])
-    @page_title = "The Simpsons - #{@episode.title} (#{@episode.season_label_short})"
+    #@episode = Episode.find_by_season_and_episode(params[:season], params[:episode])
+    @episode = Episode.find_by_id(params[:id])
 
     @user_id = current_user ? current_user.id : nil
     last_viewing = @user_id ? EpisodeView.first(

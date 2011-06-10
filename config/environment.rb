@@ -35,7 +35,19 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
 
-    config.gem "ajaxful_rating"
+  config.gem "ajaxful_rating"
+  config.gem "friendly_id", :version => "~> 3.1"
+  config.gem 'rack-rewrite', '~> 1.0.0'
+
+  require 'rack-rewrite'
+  config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+    # remove trailing slashes from URLs so that only one version exists
+    r301 %r{^/(.*)/$}, '/$1'
+  end
+
+  # 301 URLs starting with www to the non-www (preferred) ULR
+  # this is necessary for SEO so Google does not count www and non-www as two sites!
+  config.middleware.use "NoWWW" if RAILS_ENV == 'production'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]

@@ -4,9 +4,7 @@
     <ul id="season-episodes">
     <% @episodes.each do |episode| %>
         <li class="episode yellow-box">
-            <a href="<%= url_for :controller => "episodes",
-                                 :action => "show",
-                                 :id => episode %>"
+            <a href="<%= url_for :controller => :episodes, :action => :show, :id => episode %>"
                title="<%= episode.summary %>">
                 <div class="episode-title">
                     <h3><%= episode.title %></h3>

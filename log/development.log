@@ -13473,3 +13473,612 @@ Rendering template within layouts/application
 Rendering season/show
 Rendered home/_season_links (3.9ms)
 Completed in 86ms (View: 75, DB: 2) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:13:59) [GET]
+  Parameters: {"season"=>"13"}
+  [4;36;1mEpisode Load (5.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.3ms)
+Completed in 28ms (View: 15, DB: 5) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:14:39) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mEpisode Load (4.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.0ms)
+Completed in 24ms (View: 13, DB: 4) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:16:21) [GET]
+  Parameters: {"season"=>"13"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 22ms (View: 13, DB: 2) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:04) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:18) [GET]
+  Parameters: {"season"=>"13"}
+  [4;36;1mEpisode Load (6.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.8ms)
+Completed in 30ms (View: 16, DB: 7) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:26) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (5.4ms)
+Completed in 26ms (View: 15, DB: 2) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:32) [GET]
+  Parameters: {"season"=>"13"}
+  [4;36;1mEpisode Load (2.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (6.7ms)
+Completed in 93ms (View: 16, DB: 3) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:41) [GET]
+  Parameters: {"season"=>"show"}
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = 'show') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/season/show?season=13]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:45) [GET]
+  Parameters: {"season"=>"10"}
+  [4;36;1mEpisode Load (2.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '10') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (2.9ms)
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/season/10]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:47) [GET]
+  Parameters: {"season"=>"4"}
+  [4;35;1mEpisode Load (3.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '4') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.0ms)
+Completed in 21ms (View: 11, DB: 3) | 200 OK [http://localhost/season/4]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:49) [GET]
+  Parameters: {"season"=>"15"}
+  [4;36;1mEpisode Load (2.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '15') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/season/15]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:49) [GET]
+  Parameters: {"season"=>"15"}
+  [4;35;1mEpisode Load (2.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '15') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.4ms)
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://localhost/season/15]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:54) [GET]
+  Parameters: {"season"=>"18"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '18') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 82ms (View: 73, DB: 2) | 200 OK [http://localhost/season/18]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:54) [GET]
+  Parameters: {"season"=>"18"}
+  [4;35;1mEpisode Load (2.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '18') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 24ms (View: 14, DB: 3) | 200 OK [http://localhost/season/18]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:56) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.0ms)
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:17:57) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (3.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.0ms)
+Completed in 23ms (View: 11, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:18:19) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.2ms)
+Completed in 25ms (View: 15, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:18:19) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (10.9ms)
+Completed in 52ms (View: 29, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:18:31) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.2ms)
+Completed in 21ms (View: 12, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:18:31) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.9ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.4ms)
+Completed in 27ms (View: 13, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:16) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.8ms)
+Completed in 28ms (View: 18, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:16) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.6ms)
+Completed in 30ms (View: 16, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:46) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.5ms)
+Completed in 25ms (View: 16, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:46) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.3ms)
+Completed in 94ms (View: 84, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:57) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:19:57) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (3.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:20:30) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.2ms)
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:20:30) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.2ms)
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2011-06-10 13:20:38) [GET]
+  Parameters: {"season"=>"20", "episode"=>"1"}
+
+NameError (uninitialized constant EpisodeController):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2011-06-10 13:21:19) [GET]
+  Parameters: {"season"=>"20", "episode"=>"1"}
+
+NameError (uninitialized constant EpisodeController):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:21:36) [GET]
+  Parameters: {"season"=>"20", "episode"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Episode without an ID):
+  app/controllers/episodes_controller.rb:9:in `show'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:22:03) [GET]
+  Parameters: {"season"=>"20", "episode"=>"1"}
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20' AND "episodes"."episode" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 89ms (View: 80, DB: 1) | 200 OK [http://localhost/season/20/episode/1]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:22:24) [GET]
+  Parameters: {"season"=>"20", "episode"=>"1"}
+  [4;35;1mEpisode Load (2.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20' AND "episodes"."episode" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.3ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://localhost/season/20/episode/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-06-10 13:22:45) [GET]
+
+ActionController::RoutingError (No route matches "/season/20/episode/1" with {:method=>:get}):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:23:27) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.3ms)
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:23:27) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (3.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://localhost/season/20]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:23:50) [GET]
+  Parameters: {"season"=>"7"}
+  [4;36;1mEpisode Load (2.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '7') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.0ms)
+Completed in 86ms (View: 16, DB: 3) | 200 OK [http://localhost/season/7]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:27:35) [GET]
+  Parameters: {"season"=>"7"}
+  [4;36;1mEpisode Load (3.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '7') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.2ms)
+Completed in 51ms (View: 34, DB: 3) | 200 OK [http://localhost/season/7]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:27:39) [GET]
+  Parameters: {"season"=>"7"}
+  [4;35;1mEpisode Load (2.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '7') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.0ms)
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/season/7/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:28:39) [GET]
+  Parameters: {"season"=>"7"}
+  [4;36;1mEpisode Load (3.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '7') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (4.3ms)
+Completed in 113ms (View: 34, DB: 4) | 200 OK [http://localhost/season/7]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:28:41) [GET]
+  Parameters: {"season"=>"7"}
+  [4;35;1mEpisode Load (3.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '7') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 33ms (View: 21, DB: 3) | 200 OK [http://localhost/season/7/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:28:44) [GET]
+  Parameters: {"season"=>"season"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = 'season') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 15ms (View: 6, DB: 2) | 200 OK [http://localhost/season/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-06-10 13:28:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_season_links (3.3ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:28:48) [GET]
+  Parameters: {"season"=>"12"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '12') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.1ms)
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://localhost/season/12]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:28:48) [GET]
+  Parameters: {"season"=>"12"}
+  [4;36;1mEpisode Load (2.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '12') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.3ms)
+Completed in 41ms (View: 19, DB: 2) | 200 OK [http://localhost/season/12]
+
+
+Processing SeasonController#12 (for 127.0.0.1 at 2011-06-10 13:29:31) [GET]
+
+ActionController::UnknownAction (No action responded to 12. Actions: show):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:29:36) [GET]
+  Parameters: {"season"=>"12"}
+  [4;35;1mEpisode Load (2.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '12') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+
+ActionView::TemplateError (episode_url failed to generate from {:controller=>"episodes", :title=>"Treehouse of Horror XI", :episode=>1, :season=>12, :action=>"show"}, expected: {:controller=>"episodes", :action=>"show"}, diff: {:title=>"Treehouse of Horror XI", :episode=>1, :season=>12}) on line #7 of app/views/season/show.html.erb:
+4:     <ul id="season-episodes">
+5:     <% @episodes.each do |episode| %>
+6:         <li class="episode yellow-box">
+7:             <a href="<%= episode_url :season => episode.season, :episode => episode.episode, :title => episode.title %>"
+8:                title="<%= episode.summary %>">
+9:                 <div class="episode-title">
+10:                     <h3><%= episode.title %></h3>
+
+    (eval):17:in `episode_url'
+    app/views/season/show.html.erb:7
+    app/views/season/show.html.erb:5:in `each'
+    app/views/season/show.html.erb:5
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:30:37) [GET]
+  Parameters: {"season"=>"12"}
+  [4;36;1mEpisode Load (2.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '12') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.5ms)
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://localhost/season/12/episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:30:37) [GET]
+  Parameters: {"season"=>"12"}
+  [4;35;1mEpisode Load (2.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '12') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.5ms)
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://localhost/season/12/episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:30:42) [GET]
+  Parameters: {"id"=>"249"}
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."episode" IS NULL AND "episodes"."season" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering episodes/show
+
+ActionView::TemplateError (undefined method `title' for nil:NilClass) on line #3 of app/views/episodes/show.html.erb:
+1: <div id="episode_content">
+2: 
+3:     <h2><%= @episode.title %></h2>
+4: 
+5:     <fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
+6: 
+
+    app/views/episodes/show.html.erb:3
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:31:06) [GET]
+  Parameters: {"id"=>"249"}
+  [4;35;1mEpisode Load (3.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = '249') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (5.9ms)
+Completed in 25ms (View: 14, DB: 4) | 200 OK [http://localhost/episodes/249]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:31:09) [GET]
+  Parameters: {"season"=>"3"}
+  [4;36;1mEpisode Load (2.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '3') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://localhost/season/3/episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:31:16) [GET]
+  Parameters: {"season"=>"13"}
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '13') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/season/13/episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:31:18) [GET]
+  Parameters: {"season"=>"16"}
+  [4;36;1mEpisode Load (2.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '16') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.3ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/season/16/episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:31:19) [GET]
+  Parameters: {"season"=>"20"}
+  [4;35;1mEpisode Load (2.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/season/20/episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 13:31:20) [GET]
+  Parameters: {"season"=>"20"}
+  [4;36;1mEpisode Load (2.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '20') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.7ms)
+Completed in 24ms (View: 13, DB: 3) | 200 OK [http://localhost/season/20/episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 13:31:22) [GET]
+  Parameters: {"id"=>"421"}
+  [4;35;1mEpisode Load (1.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = '421') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.5ms)
+Completed in 20ms (View: 11, DB: 2) | 200 OK [http://localhost/episodes/421]

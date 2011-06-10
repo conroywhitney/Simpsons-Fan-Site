@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect 'privacy-terms', :controller => 'static', :action => 'privacy-terms'
+  map.connect 'legal-DMCA', :controller => 'static', :action => 'legal-DMCA'
+  map.connect 'about', :controller => 'static', :action => 'about'
+  map.connect 'contact', :controller => 'static', :action => 'contact'
+
+  map.connect "sitemap.xml", :controller => "seo", :action => "sitemap"
+
+  #map.episode 'season/:season/episode/:episode/:title', :controller => 'episodes', :action => 'show', :season => :season, :episode => :episode
+  map.season 'season/:season/episodes', :controller => 'season', :action => 'show', :season => :season
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
