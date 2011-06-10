@@ -24450,3 +24450,44 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (3.7ms)
 Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/watch-video/season-3-episode-2-mr-lisa-goes-to-washington]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 17:17:57) [GET]
+  Parameters: {"season"=>"9"}
+  [4;35;1mEpisode Load (2.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '9') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 26ms (View: 14, DB: 3) | 200 OK [http://localhost/season/9/episodes]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-06-10 17:17:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_season_links (4.0ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 17:18:02) [GET]
+  Parameters: {"season"=>"1"}
+  [4;36;1mEpisode Load (2.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.5ms)
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/season/1/episodes]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-06-10 17:18:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered home/_season_links (64.7ms)
+Completed in 69ms (View: 67, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 17:18:08) [GET]
+  Parameters: {"season"=>"1"}
+  [4;35;1mEpisode Load (2.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '1') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://localhost/season/1/episodes]
