@@ -21,6 +21,16 @@
         <h3><%= @episode.summary %></h3>
     </div>
 
+    <div class="clearfix"></div>
+
+    <div id="btn_prev" class="yellow-box">
+        <%= link_to "&laquo; Previous Episode", :controller => :episodes, :action => :show, :id => @previous_episode %>
+    </div>
+
+    <div id="btn_next" class="yellow-box">
+        <%= link_to "Next Episode &raquo;", :controller => :episodes, :action => :show, :id => @next_episode %>
+    </div>
+
 </div>
 
 <% content_for :head_og do %>

@@ -15,6 +15,9 @@ class EpisodesController < ApplicationController
             :conditions => ["episode_id = ? AND user_id = ?", @episode.id, @user_id],
             :order => "id DESC") : nil
     @last_watched = last_viewing ? last_viewing.friendly_timespan : "Never"
+
+    @next_episode = Episode.find_next(@episode)
+    @previous_episode = Episode.find_previous(@episode)
   end
 
   def ensure_current_url

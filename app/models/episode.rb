@@ -5,6 +5,14 @@ class Episode < ActiveRecord::Base
                     :approximate_ascii => true, # remove accents and other diacritics from Latin characters
                     :max_length => 50   # don't use slugs larger than 50 bytes
 
+  def self.find_previous(episode)
+      return self.find(episode.id - 1)
+  end
+
+  def self.find_next(episode)
+      return self.find(episode.id + 1)
+  end
+
   def source
     return "#{self.url}&amp;image=#{self.thumbnail}"
   end
