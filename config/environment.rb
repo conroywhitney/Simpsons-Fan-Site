@@ -36,7 +36,7 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
 
   config.gem "ajaxful_rating"
-  config.gem "friendly_id", :version => "~> 3.1"
+  config.gem "friendly_id", :version => "~> 3.2.1"
   config.gem 'rack-rewrite', '~> 1.0.0'
 
   require 'rack-rewrite'

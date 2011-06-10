@@ -99,7 +99,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.1851852">
+            <state line="4" column="25" selection-start="96" selection-end="96" vertical-scroll-proportion="-2.3703704">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
       <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="28" selection-start="2071" selection-end="2071" vertical-scroll-proportion="-15.296296">
+            <state line="43" column="45" selection-start="2018" selection-end="2018" vertical-scroll-proportion="-14.703704">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
       <file leaf-file-name="episodes_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/episodes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="46" selection-start="282" selection-end="282" vertical-scroll-proportion="0.22052068">
+            <state line="22" column="4" selection-start="877" selection-end="877" vertical-scroll-proportion="0.5390505">
               <folding />
             </state>
           </provider>
@@ -135,7 +135,7 @@
       <file leaf-file-name="episode.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="32" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+            <state line="5" column="78" selection-start="328" selection-end="328" vertical-scroll-proportion="-2.9629629">
               <folding />
             </state>
           </provider>
@@ -144,7 +144,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="423" selection-end="423" vertical-scroll-proportion="-4.148148">
+            <state line="9" column="33" selection-start="597" selection-end="597" vertical-scroll-proportion="-5.3333335">
               <folding />
             </state>
           </provider>
@@ -173,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/episode.rb" />
-        <option value="$PROJECT_DIR$/app/models/episode_view.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/season_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
@@ -184,10 +182,12 @@
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110610174502_add_cached_slug_to_episodes.rb" />
+        <option value="$PROJECT_DIR$/app/models/episode.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/controllers/episodes_controller.rb" />
       </list>
     </option>
@@ -1033,20 +1033,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="32" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="642" selection-end="642" vertical-scroll-proportion="-14.222222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/season_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="75" selection-start="164" selection-end="164" vertical-scroll-proportion="-2.3703704">
@@ -1064,13 +1050,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="6" selection-start="58" selection-end="58" vertical-scroll-proportion="-1.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="67" selection-start="186" selection-end="186" vertical-scroll-proportion="-1.7777778">
           <folding />
         </state>
       </provider>
@@ -1103,23 +1082,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="28" selection-start="2071" selection-end="2071" vertical-scroll-proportion="-15.296296">
+        <state line="6" column="94" selection-start="268" selection-end="268" vertical-scroll-proportion="-3.5555556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110610174502_add_cached_slug_to_episodes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.1851852">
+        <state line="7" column="27" selection-start="224" selection-end="224" vertical-scroll-proportion="0.17151608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="78" selection-start="328" selection-end="328" vertical-scroll-proportion="-2.9629629">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="423" selection-end="423" vertical-scroll-proportion="-4.148148">
+        <state line="9" column="33" selection-start="597" selection-end="597" vertical-scroll-proportion="-5.3333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="67" selection-start="186" selection-end="186" vertical-scroll-proportion="-1.7777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="96" selection-end="96" vertical-scroll-proportion="-2.3703704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="45" selection-start="2018" selection-end="2018" vertical-scroll-proportion="-14.703704">
           <folding />
         </state>
       </provider>
@@ -1131,16 +1138,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="94" selection-start="268" selection-end="268" vertical-scroll-proportion="-3.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/episodes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="46" selection-start="282" selection-end="282" vertical-scroll-proportion="0.22052068">
+        <state line="22" column="4" selection-start="877" selection-end="877" vertical-scroll-proportion="0.5390505">
           <folding />
         </state>
       </provider>

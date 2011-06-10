@@ -1,4 +1,5 @@
 class EpisodesController < ApplicationController
+  before_filter :ensure_current_url, :only => :show
 
   def index
     @episodes = Episode.all
@@ -7,13 +8,19 @@ class EpisodesController < ApplicationController
 
   def show
     #@episode = Episode.find_by_season_and_episode(params[:season], params[:episode])
-    @episode = Episode.find_by_id(params[:id])
+    #@episode = Episode.find(params[:id])
 
     @user_id = current_user ? current_user.id : nil
     last_viewing = @user_id ? EpisodeView.first(
             :conditions => ["episode_id = ? AND user_id = ?", @episode.id, @user_id],
             :order => "id DESC") : nil
     @last_watched = last_viewing ? last_viewing.friendly_timespan : "Never"
+  end
+
+  def ensure_current_url
+    @episode = Episode.first(:conditions => ["id = ? OR cached_slug LIKE ?", params[:id], params[:id] + '%'])
+    #redirect_to @episode, :status => :moved_permanently unless @episode.friendly_id_status.best?
+    redirect_to @episode, :status => :moved_permanently unless params[:id] == @episode.cached_slug
   end
 
   def rate
