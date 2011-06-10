@@ -24111,3 +24111,57 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (63.8ms)
 Completed in 84ms (View: 71, DB: 3) | 200 OK [http://localhost/watch-video/season-15-episode-2-my-mother-the-carjacker]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:25:20) [GET]
+  Parameters: {"id"=>"season-15-episode-2-my-mother-the-carjacker"}
+  [4;35;1mEpisode Load (1.9ms)[0m   [0mSELECT * FROM "episodes" WHERE (id = 'season-15-episode-2-my-mother-the-carjacker' OR cached_slug LIKE 'season-15-episode-2-my-mother-the-carjacker%') LIMIT 1[0m
+  [4;36;1mEpisode Load (0.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 316) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 314) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 24ms (View: 11, DB: 3) | 200 OK [http://localhost/watch-video/season-15-episode-2-my-mother-the-carjacker]
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:25:23) [GET]
+
+ActionView::MissingTemplate (Missing template seo/sitemap.erb in view path app/views):
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:26:13) [GET]
+  [4;36;1mEpisode Load (100.4ms)[0m   [0;1mSELECT * FROM "episodes" ORDER BY season ASC, episode ASC[0m
+Rendering template within layouts/application
+Rendering seo/google_sitemap
+Rendered home/_season_links (3.7ms)
+Completed in 517ms (View: 388, DB: 100) | 200 OK [http://localhost/sitemap.xml]
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:26:38) [GET]
+  [4;35;1mEpisode Load (30.5ms)[0m   [0mSELECT * FROM "episodes" ORDER BY season ASC, episode ASC[0m
+Rendering seo/google_sitemap
+Completed in 503ms (View: 443, DB: 30) | 200 OK [http://localhost/sitemap.xml]
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:27:23) [GET]
+  [4;36;1mEpisode Load (31.8ms)[0m   [0;1mSELECT * FROM "episodes" ORDER BY season ASC, episode ASC[0m
+Rendering seo/google_sitemap
+Completed in 514ms (View: 456, DB: 32) | 200 OK [http://localhost/sitemap.xml]
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-10 14:27:54) [GET]
+  [4;35;1mEpisode Load (31.5ms)[0m   [0mSELECT * FROM "episodes" ORDER BY season ASC, episode ASC[0m
+Rendering seo/google_sitemap
+Completed in 510ms (View: 451, DB: 32) | 200 OK [http://localhost/sitemap.xml]
