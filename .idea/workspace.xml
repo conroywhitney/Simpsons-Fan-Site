@@ -78,10 +78,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="92" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.41653904">
+            <state line="27" column="92" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-1.7777778">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="episode_views_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/episode_views_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20110610215229_alter_episode_views_user_not_null.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20110610215229_alter_episode_views_user_not_null.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="70" selection-start="238" selection-end="238" vertical-scroll-proportion="0.14701378">
               <folding />
             </state>
           </provider>
@@ -128,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
         <option value="$PROJECT_DIR$/app/controllers/seo_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/seo/google_sitemap.builder" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -144,6 +161,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110610215229_alter_episode_views_user_not_null.rb" />
       </list>
     </option>
   </component>
@@ -1044,20 +1062,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/seo_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="4" selection-start="192" selection-end="192" vertical-scroll-proportion="-3.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="286" selection-end="286" vertical-scroll-proportion="-7.111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="65" selection-start="2580" selection-end="2580" vertical-scroll-proportion="-4.148148">
@@ -1151,7 +1155,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="92" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.41653904">
+        <state line="27" column="92" selection-start="1034" selection-end="1034" vertical-scroll-proportion="-1.7777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/episode_views_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110610215229_alter_episode_views_user_not_null.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="70" selection-start="238" selection-end="238" vertical-scroll-proportion="0.14701378">
           <folding />
         </state>
       </provider>

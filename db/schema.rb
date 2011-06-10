@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110610174502) do
+ActiveRecord::Schema.define(:version => 20110610215229) do
 
   create_table "episode_views", :force => true do |t|
     t.integer  "episode_id", :null => false
-    t.integer  "user_id",    :null => false
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

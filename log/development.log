@@ -25211,3 +25211,44 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (3.5ms)
 Completed in 26ms (View: 11, DB: 5) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEpisodes (20110517165229)
+Migrating to CreateEpisodeViews (20110609201744)
+Migrating to CreateUsers (20110609203846)
+Migrating to CreateRates (20110609211802)
+Migrating to AddRatingAverageToEpisodes (20110609212338)
+Migrating to CreateSlugs (20110610174412)
+Migrating to AddCachedSlugToEpisodes (20110610174502)
+Migrating to AlterEpisodeViewsUserNotNull (20110610215229)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TEMPORARY TABLE "altered_episode_views" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "episode_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("episode_views")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "episode_views"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "episode_views" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "episode_id" integer NOT NULL, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_episode_views")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "altered_episode_views"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110610215229')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("episode_views")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("episodes")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_episodes_on_cached_slug')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rates")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_rates_on_rateable_id_and_rateable_type')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_rates_on_rater_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("slugs")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_slugs_on_n_s_s_and_s')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_slugs_on_sluggable_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_login')[0m
