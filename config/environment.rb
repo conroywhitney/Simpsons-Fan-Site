@@ -35,9 +35,9 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
 
-  config.gem "ajaxful_rating"
+  config.gem "ajaxful_rating", :version => "~> 2.2.8.2"
   config.gem "friendly_id", :version => "~> 3.2.1"
-  config.gem 'rack-rewrite', '~> 1.0.0'
+  config.gem 'rack-rewrite', :version => '~> 1.0.2'
 
   require 'rack-rewrite'
   config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do

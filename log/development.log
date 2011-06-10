@@ -24329,3 +24329,124 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (3.7ms)
 Completed in 23ms (View: 11, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-3-homer-goes-to-college]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:37:34) [GET]
+  Parameters: {"id"=>"season-5-episode-4-rosebud"}
+  [4;36;1mEpisode Load (0.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-4-rosebud' OR cached_slug LIKE 'season-5-episode-4-rosebud%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 88) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 86) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.5ms)
+Completed in 25ms (View: 13, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-4-rosebud]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:37:35) [GET]
+  Parameters: {"id"=>"season-5-episode-5-treehouse-of-horror-iv"}
+  [4;35;1mEpisode Load (1.0ms)[0m   [0mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-5-treehouse-of-horror-iv' OR cached_slug LIKE 'season-5-episode-5-treehouse-of-horror-iv%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 89) [0m
+  [4;35;1mEpisode Load (0.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 87) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 84ms (View: 11, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-5-treehouse-of-horror-iv]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:37:37) [GET]
+  Parameters: {"id"=>"season-5-episode-4-rosebud"}
+  [4;36;1mEpisode Load (0.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-4-rosebud' OR cached_slug LIKE 'season-5-episode-4-rosebud%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 88) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 86) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 24ms (View: 11, DB: 2) | 200 OK [http://localhost/watch-video/season-5-episode-4-rosebud]
+
+
+Processing EpisodeViewsController#tally (for 127.0.0.1 at 2011-06-10 14:37:41) [GET]
+  Parameters: {"episode_id"=>"87"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mEpisode Load (0.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = '87') LIMIT 1[0m
+  [4;35;1mEpisodeView Create (0.0ms)[0m   [0mSQLite3::ConstraintException: episode_views.user_id may not be NULL: INSERT INTO "episode_views" ("created_at", "updated_at", "user_id", "episode_id") VALUES('2011-06-10 18:37:41', '2011-06-10 18:37:41', NULL, 87)[0m
+
+ActiveRecord::StatementInvalid (SQLite3::ConstraintException: episode_views.user_id may not be NULL: INSERT INTO "episode_views" ("created_at", "updated_at", "user_id", "episode_id") VALUES('2011-06-10 18:37:41', '2011-06-10 18:37:41', NULL, 87)):
+  app/controllers/episode_views_controller.rb:6:in `tally'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 14:38:26) [GET]
+  Parameters: {"id"=>"season-5-episode-4-rosebud"}
+  [4;36;1mEpisode Load (0.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-4-rosebud' OR cached_slug LIKE 'season-5-episode-4-rosebud%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 88) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 86) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 27ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-4-rosebud]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 17:12:15) [GET]
+  Parameters: {"id"=>"season-5-episode-4-rosebud"}
+  [4;35;1mEpisode Load (0.9ms)[0m   [0mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-4-rosebud' OR cached_slug LIKE 'season-5-episode-4-rosebud%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 88) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 86) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.7ms)
+Completed in 103ms (View: 90, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-4-rosebud]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 17:12:19) [GET]
+  Parameters: {"id"=>"season-5-episode-5-treehouse-of-horror-iv"}
+  [4;36;1mEpisode Load (0.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-5-treehouse-of-horror-iv' OR cached_slug LIKE 'season-5-episode-5-treehouse-of-horror-iv%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.5ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 89) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 87) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 24ms (View: 11, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-5-treehouse-of-horror-iv]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 17:17:00) [GET]
+  Parameters: {"id"=>"season-5-episode-5-treehouse-of-horror-iv"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-5-episode-5-treehouse-of-horror-iv' OR cached_slug LIKE 'season-5-episode-5-treehouse-of-horror-iv%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.9ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 89) [0m
+  [4;36;1mEpisode Load (0.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 87) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (5.9ms)
+Completed in 128ms (View: 97, DB: 3) | 200 OK [http://localhost/watch-video/season-5-episode-5-treehouse-of-horror-iv]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-10 17:17:02) [GET]
+  Parameters: {"season"=>"3"}
+  [4;35;1mEpisode Load (3.0ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '3') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.4ms)
+Completed in 32ms (View: 20, DB: 3) | 200 OK [http://localhost/season/3/episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 17:17:04) [GET]
+  Parameters: {"id"=>"season-3-episode-2-mr-lisa-goes-to-washington"}
+  [4;36;1mEpisode Load (0.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (id = 'season-3-episode-2-mr-lisa-goes-to-washington' OR cached_slug LIKE 'season-3-episode-2-mr-lisa-goes-to-washington%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 40) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 38) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/watch-video/season-3-episode-2-mr-lisa-goes-to-washington]

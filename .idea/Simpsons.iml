@@ -18,13 +18,13 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="friendly_id" version="3.2.1" bound="EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="friendly_id" version="3.2.1" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rack-rewrite" version="0.1.2" bound="EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="rack-rewrite" version="1.0.2" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>

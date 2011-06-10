@@ -6,12 +6,12 @@ GEM
     babosa (0.2.2)
     friendly_id (3.2.1)
       babosa (~> 0.2.1)
-    rack-rewrite (0.1.2)
+    rack-rewrite (1.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   ajaxful_rating (~> 2.2.8.2)
-  friendly_id (= 3.2.1)
-  rack-rewrite (= 0.1.2)
+  friendly_id (~> 3.2.1)
+  rack-rewrite (~> 1.0.2)
