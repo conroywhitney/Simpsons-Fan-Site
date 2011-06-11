@@ -243,7 +243,7 @@ h2 {
     text-decoration:none;
 }
 
-#btn_prev, #btn_next {
+#btn_prev, #btn_next, #like {
     width:200px;
     height:50px;
     margin-top:30px;
@@ -264,6 +264,12 @@ h2 {
     color:#000;
     text-decoration:none;
     padding-top:20px;
+}
+
+#like {
+    width:400px;
+    float:left;
+    margin-left:50px;
 }
 
 /*

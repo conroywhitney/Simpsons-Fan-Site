@@ -2,8 +2,6 @@
 
     <h2><%= @episode.title %></h2>
 
-    <fb:like href="<%= @url %>" show_faces="true" width="430"></fb:like>
-
     <div id="embedded_video" class="yellow-box">
         <a id="video_link" href="<%= @episode.source %>" target="_blank">
             <img id="video_thumb" src="<%= @episode.thumbnail %>" />
@@ -28,6 +26,10 @@
         <a href="<%= episode_url :slug => @previous_episode %>">&laquo; Previous Episode</a>
     </div>
     <% end %>
+
+    <div id="like" class="yellow-box">
+        <fb:like href="<%= @url %>" show_faces="true" width="400"></fb:like>
+    </div>
 
     <% unless @next_episode.nil? %>
     <div id="btn_next" class="yellow-box">
