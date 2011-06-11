@@ -25329,3 +25329,48 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (4.4ms)
 Completed in 53ms (View: 22, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 18:50:18) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+
+ActionView::TemplateError (undefined local variable or method `current_url' for #<ActionView::Base:0x1036152c0>) on line #31 of app/views/episodes/show.html.erb:
+28:     <% end %>
+29: 
+30:     <div id="like" class="yellow-box">
+31:         <fb:like href="<%= current_url %>" show_faces="true" width="400"></fb:like>
+32:     </div>
+33: 
+34:     <% unless @next_episode.nil? %>
+
+    app/views/episodes/show.html.erb:31
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/conroywhitney/.rvm/rubies/ruby-1.8.7-p334/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 18:50:48) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.9ms)
+Completed in 33ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
