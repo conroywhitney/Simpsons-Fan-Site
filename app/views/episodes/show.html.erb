@@ -40,12 +40,13 @@
 </div>
 
 <% content_for :head_og do %>
-    <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)"/>
-    <meta property="og:type" content="tv_show"/>
-    <meta property="og:url" content="<%= current_url %>"/>
-    <meta property="og:image" content="<%= @episode.thumbnail %>"/>
-    <meta property="og:site_name" content="The Simpsons"/>
-    <meta property="og:description" content="<%= @episode.summary %>"/>
+    <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)" />
+    <meta property="og:type" content="tv_show" />
+    <meta property="og:url" content="<%= current_url %>" />
+    <meta property="og:image" content="<%= @episode.thumbnail %>" />
+    <meta property="og:site_name" content="The Simpsons" />
+    <meta property="fb:app_id" content="103144423110785" />
+    <meta property="og:description" content="<%= @episode.summary %>" />
 <% end %>
 
 <% content_for :header do %>*Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %><% end %>
