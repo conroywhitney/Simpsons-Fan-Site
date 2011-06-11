@@ -60,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="38" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-12.333333">
+            <state line="45" column="64" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.1669219">
               <folding />
             </state>
           </provider>
@@ -90,25 +90,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="75" selection-start="1756" selection-end="1756" vertical-scroll-proportion="-17.777779">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="31" selection-start="487" selection-end="487" vertical-scroll-proportion="-6.5185184">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="222" selection-end="222" vertical-scroll-proportion="0.122511484">
+            <state line="54" column="75" selection-start="1756" selection-end="1756" vertical-scroll-proportion="-32.0">
               <folding />
             </state>
           </provider>
@@ -141,9 +123,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20110610215229_alter_episode_views_user_not_null.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1132,30 +1114,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="75" selection-start="1756" selection-end="1756" vertical-scroll-proportion="-17.777779">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="38" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-12.333333">
+        <state line="5" column="4" selection-start="222" selection-end="222" vertical-scroll-proportion="0.122511484">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="487" selection-end="487" vertical-scroll-proportion="-6.5185184">
+        <state line="11" column="31" selection-start="487" selection-end="487" vertical-scroll-proportion="0.26952526">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="222" selection-end="222" vertical-scroll-proportion="0.122511484">
+        <state line="54" column="75" selection-start="1756" selection-end="1756" vertical-scroll-proportion="-32.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="64" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.1669219">
           <folding />
         </state>
       </provider>

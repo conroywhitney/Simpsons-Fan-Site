@@ -42,8 +42,8 @@
 <% content_for :head_og do %>
     <meta property="og:title" content="The Simpsons - <%= @episode.title %> (<%= @episode.season_label_short %>)"/>
     <meta property="og:type" content="tv_show"/>
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content=""/>
+    <meta property="og:url" content="<%= current_url %>"/>
+    <meta property="og:image" content="<%= @episode.thumbnail %>"/>
     <meta property="og:site_name" content="The Simpsons"/>
     <meta property="og:description" content="<%= @episode.summary %>"/>
 <% end %>

@@ -25374,3 +25374,14 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (3.9ms)
 Completed in 33ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 18:53:17) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.2ms)
+Completed in 33ms (View: 19, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
