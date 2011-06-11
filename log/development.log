@@ -25517,3 +25517,146 @@ Rendering template within layouts/application
 Rendering episodes/show
 Rendered home/_season_links (3.7ms)
 Completed in 31ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:19:39) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (5.7ms)
+Completed in 30ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:19:44) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 25ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:10) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.4ms)
+Completed in 32ms (View: 18, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:34) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 26ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:38) [GET]
+  Parameters: {"slug"=>"season-8-episode-8-hurricane-neddy"}
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-8-hurricane-neddy%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 163) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 161) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 101ms (View: 13, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-8-hurricane-neddy]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:40) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.5ms)
+Completed in 26ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:42) [GET]
+  Parameters: {"slug"=>"season-8-episode-10-the-twisted-world-of-marge-simpson"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-10-the-twisted-world-of-marge-simpson%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 165) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 163) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.5ms)
+Completed in 24ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-10-the-twisted-world-of-marge-simpson]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:21:43) [GET]
+  Parameters: {"slug"=>"season-8-episode-10-the-twisted-world-of-marge-simpson"}
+  [4;35;1mEpisode Load (1.5ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-10-the-twisted-world-of-marge-simpson%') LIMIT 1[0m
+  [4;36;1mEpisode Load (3.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 165) [0m
+  [4;35;1mEpisode Load (0.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 163) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.8ms)
+Completed in 33ms (View: 15, DB: 6) | 200 OK [http://localhost/watch-video/season-8-episode-10-the-twisted-world-of-marge-simpson]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:22:02) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 26ms (View: 13, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:22:21) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.6ms)
+Completed in 99ms (View: 87, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:22:22) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 28ms (View: 13, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:22:31) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;35;1mEpisode Load (8.2ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (4.3ms)
+Completed in 43ms (View: 18, DB: 10) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-11 19:22:42) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 30ms (View: 17, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
