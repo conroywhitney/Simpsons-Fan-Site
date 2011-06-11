@@ -28,7 +28,12 @@
     <% end %>
 
     <div id="like" class="yellow-box">
-        <fb:like href="<%= current_url %>" show_faces="true" width="400"></fb:like>
+        <iframe src="<%= current_url %>"
+                scrolling="no"
+                frameborder="0"
+                style="height: 62px; width: 100%"
+                allowTransparency="true">
+        </iframe>
     </div>
 
     <% unless @next_episode.nil? %>
