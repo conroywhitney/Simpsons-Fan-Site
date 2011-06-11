@@ -23,22 +23,17 @@
 
     <% unless @previous_episode.nil? %>
     <div id="btn_prev" class="yellow-box">
-        <a href="<%= episode_url :slug => @previous_episode %>">&laquo; Previous Episode</a>
+        <a href="<%= episode_url :slug => @previous_episode %>">&laquo;&nbsp;&nbsp;Previous Episode</a>
     </div>
     <% end %>
 
-    <div id="like" class="yellow-box">
-        <iframe src="http://www.facebook.com/plugins/like.php?href=<%= current_url %>&layout=standard&width=300&show_faces=true&colorscheme=light"
-                scrolling="no"
-                frameborder="0"
-                style="height: 37px; width: 300px"
-                allowTransparency="true">
-        </iframe>
+    <div id="random" class="yellow-box">
+        <a href="<%= episode_url :slug => @random_episode %>">&laquo;&nbsp;&nbsp;Random Episode&nbsp;&nbsp;&raquo;</a>
     </div>
 
     <% unless @next_episode.nil? %>
     <div id="btn_next" class="yellow-box">
-        <a href="<%= episode_url :slug => @next_episode %>">Next Episode &raquo;</a>
+        <a href="<%= episode_url :slug => @next_episode %>">Next Episode&nbsp;&nbsp;&raquo;</a>
     </div>
     <% end %>
 

@@ -18,6 +18,7 @@ class EpisodesController < ApplicationController
 
     @next_episode = Episode.find_next(@episode)
     @previous_episode = Episode.find_previous(@episode)
+    @random_episode = Episode.find_random(@episode)
   end
 
   def ensure_current_url

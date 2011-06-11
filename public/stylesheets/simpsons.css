@@ -243,7 +243,7 @@ h2 {
     text-decoration:none;
 }
 
-#btn_prev, #btn_next, #like {
+#btn_prev, #btn_next, #like, #random {
     width:200px;
     height:50px;
     margin-top:30px;
@@ -257,7 +257,7 @@ h2 {
     float:right;
 }
 
-#btn_prev a, #btn_next a {
+#btn_prev a, #btn_next a, #random a {
     display:block;
     width:200px;
     height:50px;
@@ -276,6 +276,11 @@ h2 {
 
 #like iframe {
     margin:13px auto;
+}
+
+#random {
+    float:left;
+    margin-left:150px;
 }
 
 /*

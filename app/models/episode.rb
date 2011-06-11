@@ -21,6 +21,13 @@ class Episode < ActiveRecord::Base
       end
   end
 
+  def self.find_random(episode)
+      #begin
+          rand_id = rand(483)
+      #end until rand_id != episode.id
+      return self.find(rand_id)
+  end
+
   def source
     return "#{self.url}&amp;image=#{self.thumbnail}"
   end
