@@ -25252,3 +25252,25 @@ Migrating to AlterEpisodeViewsUserNotNull (20110610215229)
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_slugs_on_sluggable_id')[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-10 17:53:33) [GET]
+  Parameters: {"slug"=>"season-8-episode-9-the-springfield-files"}
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-8-episode-9-the-springfield-files%') LIMIT 1[0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 164) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 162) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 26ms (View: 12, DB: 3) | 200 OK [http://localhost/watch-video/season-8-episode-9-the-springfield-files]
+
+
+Processing EpisodeViewsController#tally (for 127.0.0.1 at 2011-06-10 17:53:35) [GET]
+  Parameters: {"episode_id"=>"163"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [4;36;1mEpisode Load (0.7ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = '163') LIMIT 1[0m
+  [4;35;1mEpisodeView Create (0.4ms)[0m   [0mINSERT INTO "episode_views" ("created_at", "updated_at", "user_id", "episode_id") VALUES('2011-06-10 21:53:35', '2011-06-10 21:53:35', NULL, 163)[0m
+Rendering template within layouts/application
+Rendering episode_views/tally
+Rendered home/_season_links (6.2ms)
+Completed in 134ms (View: 17, DB: 1) | 200 OK [http://localhost/episode_views/tally?episode_id=163]
