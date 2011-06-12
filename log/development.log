@@ -28888,3 +28888,186 @@ Rendering template within layouts/application
 Rendering characters/show
 Rendered home/_season_links (4.1ms)
 Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/characters/homer-simpson]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 03:52:36) [GET]
+  Parameters: {"season"=>"10"}
+  [4;35;1mEpisode Load (2.8ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."season" = '10') ORDER BY episode ASC[0m
+Rendering template within layouts/application
+Rendering season/show
+Rendered home/_season_links (3.7ms)
+Completed in 95ms (View: 16, DB: 3) | 200 OK [http://localhost/season/10/episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:52:42) [GET]
+  Parameters: {"slug"=>"season-10-episode-8-homer-simpson-in-kidney-trouble"}
+  [4;36;1mEpisode Load (1.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-10-episode-8-homer-simpson-in-kidney-trouble%') LIMIT 1[0m
+  [4;35;1mContribution Load (3.1ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 211 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 343) [0m
+  [4;35;1mContribution Load (0.4ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 211 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 223) [0m
+  [4;35;1mEpisode Load (0.9ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 212) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 210) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 131) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 42ms (View: 14, DB: 7) | 200 OK [http://localhost/watch-video/season-10-episode-8-homer-simpson-in-kidney-trouble]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:52:53) [GET]
+  Parameters: {"slug"=>"season-7-episode-1-who-shot-mr-burns-part-two"}
+  [4;36;1mEpisode Load (1.0ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-7-episode-1-who-shot-mr-burns-part-two%') LIMIT 1[0m
+  [4;35;1mContribution Load (0.7ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 131 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 259) [0m
+  [4;35;1mContribution Load (0.4ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 131 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 226) [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 354) [0m
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 132) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 130) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 85) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 99ms (View: 13, DB: 4) | 200 OK [http://localhost/watch-video/season-7-episode-1-who-shot-mr-burns-part-two]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:52:56) [GET]
+  Parameters: {"slug"=>"season-6-episode-25-who-shot-mr-burns-part-one"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-6-episode-25-who-shot-mr-burns-part-one%') LIMIT 1[0m
+  [4;36;1mContribution Load (0.6ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 130 AND "contributions"."contribution_type" = 'director') [0m
+  [4;35;1mContributor Load (0.2ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 333) [0m
+  [4;36;1mContribution Load (0.4ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 130 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;35;1mContributor Load (0.5ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 226) [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 354) [0m
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 131) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 129) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 23) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 36ms (View: 12, DB: 5) | 200 OK [http://localhost/watch-video/season-6-episode-25-who-shot-mr-burns-part-one]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:52:58) [GET]
+  Parameters: {"slug"=>"season-6-episode-24-lemon-of-troy"}
+  [4;36;1mEpisode Load (1.0ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-6-episode-24-lemon-of-troy%') LIMIT 1[0m
+  [4;35;1mContribution Load (0.7ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 129 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 360) [0m
+  [4;35;1mContribution Load (0.4ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 129 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 310) [0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 130) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 128) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 105) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 101ms (View: 13, DB: 4) | 200 OK [http://localhost/watch-video/season-6-episode-24-lemon-of-troy]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:53:01) [GET]
+  Parameters: {"slug"=>"season-6-episode-25-who-shot-mr-burns-part-one"}
+  [4;36;1mEpisode Load (1.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-6-episode-25-who-shot-mr-burns-part-one%') LIMIT 1[0m
+  [4;35;1mContribution Load (0.6ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 130 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 333) [0m
+  [4;35;1mContribution Load (0.5ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 130 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 226) [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 354) [0m
+  [4;36;1mEpisode Load (1.1ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 131) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 129) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 218) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.6ms)
+Completed in 37ms (View: 12, DB: 5) | 200 OK [http://localhost/watch-video/season-6-episode-25-who-shot-mr-burns-part-one]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:53:02) [GET]
+  Parameters: {"slug"=>"season-7-episode-1-who-shot-mr-burns-part-two"}
+  [4;35;1mEpisode Load (1.1ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-7-episode-1-who-shot-mr-burns-part-two%') LIMIT 1[0m
+  [4;36;1mContribution Load (1.2ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 131 AND "contributions"."contribution_type" = 'director') [0m
+  [4;35;1mContributor Load (0.2ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 259) [0m
+  [4;36;1mContribution Load (0.4ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 131 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 226) [0m
+  [4;36;1mContributor Load (0.1ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 354) [0m
+  [4;35;1mEpisode Load (1.2ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 132) [0m
+  [4;36;1mEpisode Load (0.4ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 130) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 419) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.5ms)
+Completed in 109ms (View: 14, DB: 5) | 200 OK [http://localhost/watch-video/season-7-episode-1-who-shot-mr-burns-part-two]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 03:53:04) [GET]
+  Parameters: {"slug"=>"season-19-episode-19-mona-leaves-a"}
+  [4;36;1mEpisode Load (1.9ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-19-episode-19-mona-leaves-a%') LIMIT 1[0m
+  [4;35;1mContribution Load (0.7ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 419 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 343) [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 372) [0m
+  [4;36;1mContribution Load (0.4ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 419 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 299) [0m
+  [4;36;1mEpisode Load (0.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 420) [0m
+  [4;35;1mEpisode Load (0.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 418) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 90) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+Rendered home/_season_links (3.7ms)
+Completed in 36ms (View: 12, DB: 5) | 200 OK [http://localhost/watch-video/season-19-episode-19-mona-leaves-a]
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2011-06-12 03:57:09) [GET]
+  [4;35;1mCharacter Load (0.8ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/application
+Rendering characters/index
+Rendered home/_season_links (4.9ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/characters]
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2011-06-12 03:57:13) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mCharacter Load (0.1ms)[0m   [0;1mSELECT * FROM "characters" WHERE (characters.cached_slug = '7') LIMIT 1[0m
+  [4;35;1mCharacter Load (0.2ms)[0m   [0mSELECT "characters".* FROM "characters" INNER JOIN "slugs" ON "slugs".sluggable_id = "characters".id AND "slugs".sluggable_type = 'Character' WHERE ("slugs"."name" = '7' AND "slugs"."sequence" = 1) LIMIT 1[0m
+  [4;36;1mCharacter Load (0.1ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 7) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering characters/show
+Rendered home/_season_links (3.7ms)
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/characters/7]
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2011-06-12 03:59:12) [GET]
+  [4;35;1mCharacter Load (1.0ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/application
+Rendering characters/index
+Rendered home/_season_links (4.4ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/characters]
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2011-06-12 03:59:15) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mCharacter Load (0.1ms)[0m   [0;1mSELECT * FROM "characters" WHERE (characters.cached_slug = '8') LIMIT 1[0m
+  [4;35;1mCharacter Load (0.2ms)[0m   [0mSELECT "characters".* FROM "characters" INNER JOIN "slugs" ON "slugs".sluggable_id = "characters".id AND "slugs".sluggable_type = 'Character' WHERE ("slugs"."name" = '8' AND "slugs"."sequence" = 1) LIMIT 1[0m
+  [4;36;1mCharacter Load (0.1ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering characters/show
+Rendered home/_season_links (3.6ms)
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/characters/8]
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2011-06-12 04:01:45) [GET]
+  [4;35;1mCharacter Load (0.9ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/application
+Rendering characters/index
+Rendered home/_season_links (3.5ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/characters]
+
+
+Processing CharactersController#show (for 127.0.0.1 at 2011-06-12 04:01:51) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mCharacter Load (0.2ms)[0m   [0;1mSELECT * FROM "characters" WHERE (characters.cached_slug = '8') LIMIT 1[0m
+  [4;35;1mCharacter Load (0.2ms)[0m   [0mSELECT "characters".* FROM "characters" INNER JOIN "slugs" ON "slugs".sluggable_id = "characters".id AND "slugs".sluggable_type = 'Character' WHERE ("slugs"."name" = '8' AND "slugs"."sequence" = 1) LIMIT 1[0m
+  [4;36;1mCharacter Load (0.1ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."id" = 8) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering characters/show
+Rendered home/_season_links (3.7ms)
+Completed in 16ms (View: 8, DB: 1) | 200 OK [http://localhost/characters/8]
