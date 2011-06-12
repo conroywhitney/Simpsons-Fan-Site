@@ -1,8 +1,8 @@
 <div id="episode_content">
 
     <div id="embedded_video" class="yellow-box">
-        <a id="video_link" href="<%= @episode.source %>" target="_blank">
-            <img id="video_thumb" src="<%= @episode.thumbnail %>" />
+        <a id="video_link" href="<%= @episode.source %>" target="_blank" title="Watch Simpsons Video - Season <%= @episode.season %> - Episode <%= @episode.episode %> - <%= @episode.title %>" rel="nofollow">
+            <img id="video_thumb" src="<%= @episode.thumbnail %>" alt="The Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %> - <%= @episode.title %>" />
         </a>
 
         <div id="episode_stats">
@@ -20,18 +20,20 @@
     <div class="clearfix"></div>
 
     <% unless @previous_episode.nil? %>
+        <% content_for :prev do %><%= episode_url :slug => @previous_episode %><% end %>
     <div id="btn_prev" class="yellow-box white-hover">
-        <a href="<%= episode_url :slug => @previous_episode %>">&laquo;&nbsp;&nbsp;Previous Episode</a>
+        <a href="<%= episode_url :slug => @previous_episode %>" title="Watch Simpsons Video - Season <%= @previous_episode.season %> - Episode <%= @previous_episode.episode %> - <%= @previous_episode.title %>">&laquo;&nbsp;&nbsp;Previous Episode</a>
     </div>
     <% end %>
 
     <div id="btn_random" class="yellow-box white-hover">
-        <a href="<%= episode_url :slug => @random_episode %>">&laquo;&nbsp;&nbsp;Random Episode&nbsp;&nbsp;&raquo;</a>
+        <a href="<%= episode_url :slug => @random_episode %>" title="Watch a Random Simpsons Episode">&laquo;&nbsp;&nbsp;Random Episode&nbsp;&nbsp;&raquo;</a>
     </div>
 
     <% unless @next_episode.nil? %>
+        <% content_for :next do %><%= episode_url :slug => @next_episode %><% end %>
     <div id="btn_next" class="yellow-box white-hover">
-        <a href="<%= episode_url :slug => @next_episode %>">Next Episode&nbsp;&nbsp;&raquo;</a>
+        <a href="<%= episode_url :slug => @next_episode %>" title="Watch Simpsons Video - Season <%= @next_episode.season %> - Episode <%= @next_episode.episode %> - <%= @next_episode.title %>">Next Episode&nbsp;&nbsp;&raquo;</a>
     </div>
     <% end %>
 
@@ -87,7 +89,6 @@
             $("#last_watched").html("Today");
           },
           error: function() {
-              alert('error!');
           }
         });
     });

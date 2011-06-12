@@ -1,24 +1,20 @@
- <% if @characters.nil? %>
-    <h2>No Episodes Found</h2>
-<% else %>
-    <ul id="character_list">
-    <% @characters.each do |character| %>
-        <li class="character yellow-box">
-            <a href="<%= character_url :slug => character %>"
-               title="<%= character.name %>">
-                <div class="character-name">
-                    <h3><%= character.name %></h3>
-                </div>
+<ul id="character_list">
+<% @characters.each do |character| %>
+    <li class="character yellow-box">
+        <a href="<%= character_url :slug => character %>"
+           title="<%= character.name %>">
+            <div class="character-name">
+                <h3><%= character.name %></h3>
+            </div>
 
-                <img src="<%= character.image %>" class="character-thumbnail" />
-            </a>
-        </li>
-    <% end %>
-    </ul>
-
+            <img src="<%= character.image %>" class="character-thumbnail" alt="<%= character.name %>" title="<%= character.name %>"/>
+        </a>
+    </li>
 <% end %>
+</ul>
 
-<% content_for :header do %>*Simpsons Characters<% end %>
+<% content_for :header do %>List of Simpsons Characters<% end %>
+<% content_for :subheader do %>The Simpsons - Characters<% end %>
 <% content_for :page_title do %>List of Simpsons Characters<% end %>
 <% content_for :meta_description do %><% end %>
 <% content_for :meta_keywords do %><% end %>

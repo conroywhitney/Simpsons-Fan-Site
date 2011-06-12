@@ -2,12 +2,15 @@
 <% @episodes.each do |episode| %>
     <li class="episode yellow-box">
         <a href="<%= episode_url :slug => episode %>"
-           title="<%= episode.summary %>">
+           title="Watch Simpsons Video - Season <%= episode.season %> - Episode <%= episode.episode %> - <%= episode.title %>">
             <div class="episode-title">
                 <h3><%= episode.title %></h3>
             </div>
 
-            <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
+            <img src="<%= episode.thumbnail %>"
+                 class="episode-thumbnail"
+                 alt="The Simpsons - Season <%= episode.season %> - Episode <%= episode.episode %> - <%= episode.title %>"
+                 title="<%= episode.summary %>"/>
 
             <div class="season-label"><%= episode.season_label %></div>
         </a>

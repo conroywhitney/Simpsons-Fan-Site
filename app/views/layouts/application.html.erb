@@ -15,6 +15,9 @@
     <meta name="description" content="<%= yield :meta_description %>" />
     <meta name="keywords" content="the simpsons, simpsons, watch simpsons, simpsons episodes, <%= yield :meta_keywords %>" />
 
+    <link rel="prev" href="<%= yield :prev %>" />
+    <link rel="next" href="<%= yield :next %>" />
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
     <%= stylesheet_link_tag 'simpsons' %>

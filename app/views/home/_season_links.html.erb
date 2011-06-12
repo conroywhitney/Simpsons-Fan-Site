@@ -1,7 +1,7 @@
 <ul id="season_links">
     <li id="season_link_label"><a href="/">Seasons</a></li>
 <% (1..9).each do |i| %>
-    <li class="single-digit"><a href="<%= season_url :slug => "season-#{i}" %>"><%= i %></a></li><% end %>
+    <li class="single-digit"><a href="<%= season_url :slug => "season-#{i}" %>" title="The Simpsons Season <%= i %> Episodes"><%= i %></a></li><% end %>
 <% (10..22).each do |i| %>
-    <li class="double-digit"><a href="<%= season_url :slug => "season-#{i}" %>"><%= i %></a></li><% end %>
+    <li class="double-digit"><a href="<%= season_url :slug => "season-#{i}" %>" title="The Simpsons Season <%= i %> Episodes"><%= i %></a></li><% end %>
 </ul><!-- /season_links -->
