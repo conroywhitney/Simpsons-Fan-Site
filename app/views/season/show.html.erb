@@ -18,6 +18,26 @@
 <% end %>
 </ul>
 
+    <div class="clearfix"></div>
+
+    <div id="btn_prev" class="yellow-box white-hover <%= @previous_season.nil? ? "hidden" : "" %>">
+    <% unless @previous_season.nil? %>
+        <a href="<%= season_url :slug => @previous_season %>" title="The Simpsons Seasons - Season <%= @previous_season %> Episodes">&laquo;&nbsp;&nbsp;Previous Season</a>
+        <% content_for :prev do %><%= season_url :slug => @previous_season %><% end %>
+    <% end %>
+    </div>
+
+    <div id="btn_random" class="yellow-box white-hover">
+        <a href="<%= season_url :slug => @random_season %>" title="View Episodes from Random Simpsons Season">&laquo;&nbsp;&nbsp;Random Season&nbsp;&nbsp;&raquo;</a>
+    </div>
+
+    <div id="btn_next" class="yellow-box white-hover <%= @next_season.nil? ? "hidden" : "" %>">
+    <% unless @next_season.nil? %>
+        <a href="<%= season_url @next_season %>" title="The Simpsons Season - Season <%= @next_season %> Episodes">Next Season&nbsp;&nbsp;&raquo;</a>
+        <% content_for :next do %><%= season_url :slug => @next_season %><% end %>
+    <% end %>
+    </div>
+
 <% content_for :header do %>Season <%= @season %> Episodes<% end %>
 <% content_for :subheader do %>The Simpsons - Seasons<% end %>
 <% content_for :page_title do %>The Simpsons Season <%= @season %> Episodes - Simpson Seasons<% end %>

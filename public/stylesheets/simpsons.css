@@ -325,6 +325,10 @@ li.character:hover,
     text-align:left;
 }
 
+.hidden {
+    visibility:hidden;
+}
+
 /*
 * ---------------------------------------------------------------------------------
 * Ajaxful-Rating

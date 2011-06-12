@@ -19,23 +19,23 @@
 
     <div class="clearfix"></div>
 
+    <div id="btn_prev" class="yellow-box white-hover <%= @previous_episode.nil? ? "hidden" : "" %>">
     <% unless @previous_episode.nil? %>
-        <% content_for :prev do %><%= episode_url :slug => @previous_episode %><% end %>
-    <div id="btn_prev" class="yellow-box white-hover">
         <a href="<%= episode_url :slug => @previous_episode %>" title="Watch Simpsons Video - Season <%= @previous_episode.season %> - Episode <%= @previous_episode.episode %> - <%= @previous_episode.title %>">&laquo;&nbsp;&nbsp;Previous Episode</a>
-    </div>
+        <% content_for :prev do %><%= episode_url :slug => @previous_episode %><% end %>
     <% end %>
+    </div>
 
     <div id="btn_random" class="yellow-box white-hover">
         <a href="<%= episode_url :slug => @random_episode %>" title="Watch a Random Simpsons Episode">&laquo;&nbsp;&nbsp;Random Episode&nbsp;&nbsp;&raquo;</a>
     </div>
 
+    <div id="btn_next" class="yellow-box white-hover <%= @next_episode.nil? ? "hidden" : "" %>">
     <% unless @next_episode.nil? %>
-        <% content_for :next do %><%= episode_url :slug => @next_episode %><% end %>
-    <div id="btn_next" class="yellow-box white-hover">
         <a href="<%= episode_url :slug => @next_episode %>" title="Watch Simpsons Video - Season <%= @next_episode.season %> - Episode <%= @next_episode.episode %> - <%= @next_episode.title %>">Next Episode&nbsp;&nbsp;&raquo;</a>
-    </div>
+        <% content_for :next do %><%= episode_url :slug => @next_episode %><% end %>
     <% end %>
+    </div>
 
     <div class="clearfix"></div>
 

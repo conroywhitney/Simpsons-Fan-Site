@@ -27,7 +27,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="29" selection-start="4251" selection-end="4251" vertical-scroll-proportion="0.6029777">
+            <state line="24" column="88" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.32506204">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="41" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.3703704">
+            <state line="22" column="97" selection-start="847" selection-end="892" vertical-scroll-proportion="-1.6666666">
               <folding />
             </state>
           </provider>
@@ -72,7 +72,7 @@
       <file leaf-file-name="simpsons.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="2" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-2.9629629">
+            <state line="328" column="22" selection-start="5047" selection-end="5047" vertical-scroll-proportion="-8.777778">
               <folding />
             </state>
           </provider>
@@ -99,7 +99,7 @@
       <file leaf-file-name="season_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/season_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="431" selection-end="431" vertical-scroll-proportion="-7.111111">
+            <state line="8" column="54" selection-start="317" selection-end="317" vertical-scroll-proportion="-4.740741">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
       <file leaf-file-name="episode.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="10" selection-start="816" selection-end="816" vertical-scroll-proportion="-14.444445">
+            <state line="27" column="2" selection-start="733" selection-end="882" vertical-scroll-proportion="-10.555555">
               <folding />
             </state>
           </provider>
@@ -135,7 +135,7 @@
       <file leaf-file-name="season.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/season.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="377" selection-end="377" vertical-scroll-proportion="-4.740741">
+            <state line="31" column="26" selection-start="784" selection-end="784" vertical-scroll-proportion="-8.888889">
               <folding />
             </state>
           </provider>
@@ -179,15 +179,15 @@
         <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_add_season_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_rename_season_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200303_create_seasons.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/season_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/season.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/characters/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/characters/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/_season_links.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/season_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/season.rb" />
         <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
         <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
       </list>
     </option>
@@ -1125,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="10" selection-start="816" selection-end="816" vertical-scroll-proportion="-14.444445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110612200303_create_seasons.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.3703704">
@@ -1139,37 +1132,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/episodes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="51" selection-end="100" vertical-scroll-proportion="-0.5925926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="28" selection-start="702" selection-end="702" vertical-scroll-proportion="-7.111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/season.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="377" selection-end="377" vertical-scroll-proportion="-4.740741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/season_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="431" selection-end="431" vertical-scroll-proportion="-7.111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="2" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-2.9629629">
           <folding />
         </state>
       </provider>
@@ -1209,16 +1174,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/episodes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="51" selection-end="100" vertical-scroll-proportion="-0.5925926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/episode.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="2" selection-start="733" selection-end="882" vertical-scroll-proportion="-10.555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/season.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="26" selection-start="784" selection-end="784" vertical-scroll-proportion="-8.888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/season_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="54" selection-start="317" selection-end="317" vertical-scroll-proportion="-4.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="328" column="22" selection-start="5047" selection-end="5047" vertical-scroll-proportion="-8.777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.3703704">
+        <state line="22" column="97" selection-start="847" selection-end="892" vertical-scroll-proportion="-1.6666666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="29" selection-start="4251" selection-end="4251" vertical-scroll-proportion="0.6029777">
+        <state line="24" column="88" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.32506204">
           <folding />
         </state>
       </provider>
