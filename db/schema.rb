@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612065630) do
+ActiveRecord::Schema.define(:version => 20110612200714) do
 
   create_table "characters", :force => true do |t|
     t.string   "name",        :null => false
@@ -56,16 +56,16 @@ ActiveRecord::Schema.define(:version => 20110612065630) do
   end
 
   create_table "episodes", :id => false, :force => true do |t|
-    t.integer  "id",                                                            :null => false
+    t.integer  "id",                              :null => false
     t.string   "title"
-    t.integer  "season",                                                        :null => false
-    t.integer  "episode",                                                       :null => false
+    t.integer  "season_id",                       :null => false
+    t.integer  "episode",                         :null => false
     t.string   "url"
     t.string   "thumbnail"
     t.text     "summary"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "rating_average", :precision => 6, :scale => 2, :default => 0.0
+    t.decimal  "rating_average", :default => 0.0
     t.string   "cached_slug"
   end
 
@@ -83,6 +83,12 @@ ActiveRecord::Schema.define(:version => 20110612065630) do
 
   add_index "rates", ["rateable_id", "rateable_type"], :name => "index_rates_on_rateable_id_and_rateable_type"
   add_index "rates", ["rater_id"], :name => "index_rates_on_rater_id"
+
+  create_table "seasons", :force => true do |t|
+    t.integer  "number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "slugs", :force => true do |t|
     t.string   "name"

@@ -10,7 +10,7 @@ ActionController::Routing::Routes.draw do |map|
 
   #map.episode 'season/:season/episode/:episode/:title', :controller => 'episodes', :action => 'show', :season => :season, :episode => :episode
   map.episode '/watch-video/:slug', :controller => 'episodes', :action => 'show'
-  map.season 'season/:season/episodes', :controller => 'season', :action => 'show', :season => :season
+  map.season '/seasons/:slug', :controller => 'season', :action => 'show'
   map.character '/characters/:slug', :controller => 'characters', :action => 'show'
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

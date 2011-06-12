@@ -62,6 +62,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.5, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/actionmailer-3.0.5)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/mime-types-1.16)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.5, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/activeresource-3.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.10.1, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/pg-0.10.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-rewrite (v1.0.2, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/rack-rewrite-1.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] friendly_id (v3.2.1, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/friendly_id-3.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] babosa (v0.2.2, /Users/conroywhitney/.rvm/gems/ruby-1.8.7-p334/gems/babosa-0.2.2)" level="application" />
   </component>
 </module>
 
