@@ -177,10 +177,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="11" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.8575804">
+            <state line="35" column="11" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-20.74074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_sitemap.builder" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="34" selection-start="266" selection-end="266" vertical-scroll-proportion="0.29402757">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seo_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/seo_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="53" selection-start="129" selection-end="129" vertical-scroll-proportion="-2.3703704">
               <folding />
             </state>
           </provider>
@@ -200,8 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_add_season_id.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_rename_season_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200303_create_seasons.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/characters/show.html.erb" />
@@ -216,6 +232,8 @@
         <option value="$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/seo_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/seo/google_sitemap.builder" />
       </list>
     </option>
   </component>
@@ -1138,20 +1156,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="702" selection-end="702" vertical-scroll-proportion="-7.111111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/characters_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="-5.3333335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="102" selection-start="181" selection-end="181" vertical-scroll-proportion="-1.1851852">
@@ -1245,7 +1249,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="11" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.8575804">
+        <state line="35" column="11" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-20.74074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/seo_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="53" selection-start="129" selection-end="129" vertical-scroll-proportion="-2.3703704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/seo/google_sitemap.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="266" selection-end="266" vertical-scroll-proportion="0.29402757">
           <folding />
         </state>
       </provider>

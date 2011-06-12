@@ -2,15 +2,15 @@ xml.instruct!
 
 xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
 
-  (1..22).each do |i|
+  @seasons.each do |season|
       xml.url do
-          xml.loc   season_url :season => i
+          xml.loc   season_url season
       end
   end
 
   @episodes.each do |episode|
     xml.url do
-      xml.loc         watch_episode_url :id => episode
+      xml.loc         episode_url episode
     end
   end
 

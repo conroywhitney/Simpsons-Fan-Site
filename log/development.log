@@ -36572,3 +36572,10 @@ Rendering season/show
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 22) [0m
 Rendered home/_season_links (8.9ms)
 Completed in 50ms (View: 33, DB: 3) | 200 OK [http://localhost/seasons/season-22-episodes]
+
+
+Processing SeoController#sitemap (for 127.0.0.1 at 2011-06-12 18:32:06) [GET]
+  [4;36;1mSeason Load (1.3ms)[0m   [0;1mSELECT * FROM "seasons" ORDER BY number ASC[0m
+  [4;35;1mEpisode Load (30.4ms)[0m   [0mSELECT * FROM "episodes" ORDER BY season_id ASC, episode ASC[0m
+Rendering seo/google_sitemap
+Completed in 405ms (View: 258, DB: 32) | 200 OK [http://localhost/sitemap.xml]
