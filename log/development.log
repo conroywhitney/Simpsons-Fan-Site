@@ -36064,3 +36064,301 @@ Rendering episodes/show
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 1) [0m
 Rendered home/_season_links (4.9ms)
 Completed in 47ms (View: 23, DB: 4) | 200 OK [http://localhost/watch-video/season-1-episode-2-bart-the-genius]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-12 17:58:12) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (5.0ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-12 17:58:27) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (5.3ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-12 17:58:41) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (5.1ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-12 18:04:24) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (7.8ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-12 18:04:27) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (5.4ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-12 18:04:32) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (5.5ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-12 18:04:38) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (5.1ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:04:42) [GET]
+  Parameters: {"slug"=>"season-9"}
+  [4;36;1mSeason Load (0.7ms)[0m   [0;1mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-9%') LIMIT 1[0m
+Redirected to http://localhost:3000/seasons/season-9-episodes
+Filter chain halted as [:ensure_current_url] rendered_or_redirected.
+Completed in 15ms (DB: 1) | 301 Moved Permanently [http://localhost/seasons/season-9]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:04:42) [GET]
+  Parameters: {"slug"=>"season-9-episodes"}
+  [4;35;1mSeason Load (0.8ms)[0m   [0mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-9-episodes%') LIMIT 1[0m
+  [4;36;1mSeason Load (0.3ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mSeason Load (0.1ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 8) [0m
+  [4;36;1mSeason Load (0.1ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering season/show
+  [4;35;1mEpisode Load (2.6ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes".season_id = 9) [0m
+  [4;36;1mSeason Load (0.2ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+Rendered home/_season_links (4.9ms)
+Completed in 67ms (View: 33, DB: 4) | 200 OK [http://localhost/seasons/season-9-episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:04:43) [GET]
+  Parameters: {"slug"=>"season-10-episodes"}
+  [4;35;1mSeason Load (1.1ms)[0m   [0mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-10-episodes%') LIMIT 1[0m
+  [4;36;1mSeason Load (0.3ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 11) [0m
+  [4;35;1mSeason Load (0.2ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 9) [0m
+  [4;36;1mSeason Load (0.1ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering season/show
+  [4;35;1mEpisode Load (2.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes".season_id = 10) [0m
+  [4;36;1mSeason Load (0.2ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 10) [0m
+Rendered home/_season_links (9.5ms)
+Completed in 67ms (View: 44, DB: 4) | 200 OK [http://localhost/seasons/season-10-episodes]
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2011-06-12 18:04:45) [GET]
+  [4;35;1mCharacter Load (1.2ms)[0m   [0mSELECT * FROM "characters" [0m
+Rendering template within layouts/application
+Rendering characters/index
+Rendered home/_season_links (9.5ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/characters]
+
+
+Processing StaticController#contact (for 127.0.0.1 at 2011-06-12 18:04:47) [GET]
+Rendering template within layouts/application
+Rendering static/contact
+Rendered home/_season_links (11.6ms)
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing StaticController#contact (for 127.0.0.1 at 2011-06-12 18:05:10) [GET]
+Rendering template within layouts/application
+Rendering static/contact
+Rendered home/_season_links (5.1ms)
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing StaticController#contact (for 127.0.0.1 at 2011-06-12 18:05:44) [GET]
+Rendering template within layouts/application
+Rendering static/contact
+Rendered home/_season_links (5.0ms)
+Completed in 126ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing CharactersController#index (for 127.0.0.1 at 2011-06-12 18:05:52) [GET]
+  [4;36;1mCharacter Load (0.9ms)[0m   [0;1mSELECT * FROM "characters" [0m
+Rendering template within layouts/application
+Rendering characters/index
+Rendered home/_season_links (4.9ms)
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/characters]
+
+
+Processing StaticController#privacy_terms (for 127.0.0.1 at 2011-06-12 18:05:54) [GET]
+Rendering template within layouts/application
+Rendering static/privacy_terms
+Rendered home/_season_links (5.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/privacy-terms]
+
+
+Processing StaticController#legal_DMCA (for 127.0.0.1 at 2011-06-12 18:05:56) [GET]
+Rendering template within layouts/application
+Rendering static/legal_DMCA
+Rendered home/_season_links (5.8ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/legal-DMCA]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:06:00) [GET]
+  Parameters: {"slug"=>"season-4"}
+  [4;35;1mSeason Load (0.8ms)[0m   [0mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-4%') LIMIT 1[0m
+Redirected to http://localhost:3000/seasons/season-4-episodes
+Filter chain halted as [:ensure_current_url] rendered_or_redirected.
+Completed in 91ms (DB: 1) | 301 Moved Permanently [http://localhost/seasons/season-4]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:06:00) [GET]
+  Parameters: {"slug"=>"season-4-episodes"}
+  [4;36;1mSeason Load (0.7ms)[0m   [0;1mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-4-episodes%') LIMIT 1[0m
+  [4;35;1mSeason Load (0.3ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mSeason Load (0.3ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering season/show
+  [4;36;1mEpisode Load (2.6ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes".season_id = 4) [0m
+  [4;35;1mSeason Load (0.2ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+Rendered home/_season_links (6.0ms)
+Completed in 65ms (View: 31, DB: 4) | 200 OK [http://localhost/seasons/season-4-episodes]
+
+
+Processing SeasonController#show (for 127.0.0.1 at 2011-06-12 18:06:01) [GET]
+  Parameters: {"slug"=>"season-5-episodes"}
+  [4;35;1mSeason Load (1.5ms)[0m   [0mSELECT * FROM "seasons" WHERE (cached_slug LIKE 'season-5-episodes%') LIMIT 1[0m
+  [4;36;1mSeason Load (0.5ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 6) [0m
+  [4;35;1mSeason Load (0.3ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mSeason Load (0.2ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 19) [0m
+Rendering template within layouts/application
+Rendering season/show
+  [4;35;1mEpisode Load (7.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes".season_id = 5) [0m
+  [4;36;1mSeason Load (0.7ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 5) [0m
+Rendered home/_season_links (5.6ms)
+Completed in 173ms (View: 137, DB: 11) | 200 OK [http://localhost/seasons/season-5-episodes]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 18:06:03) [GET]
+  Parameters: {"slug"=>"season-4-episode-15-i-love-lisa"}
+  [4;36;1mEpisode Load (1.8ms)[0m   [0;1mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-4-episode-15-i-love-lisa%') LIMIT 1[0m
+  [4;35;1mContribution Load (1.3ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 76 AND "contributions"."contribution_type" = 'director') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 259) [0m
+  [4;35;1mContribution Load (0.4ms)[0m   [0mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 76 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;36;1mContributor Load (0.2ms)[0m   [0;1mSELECT * FROM "contributors" WHERE ("contributors"."id" = 263) [0m
+  [4;35;1mEpisode Load (1.3ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 77) [0m
+  [4;36;1mEpisode Load (0.5ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 75) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 419) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+  [4;36;1mSeason Load (0.2ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+Rendered home/_season_links (4.8ms)
+Completed in 61ms (View: 25, DB: 6) | 200 OK [http://localhost/watch-video/season-4-episode-15-i-love-lisa]
+
+
+Processing EpisodesController#show (for 127.0.0.1 at 2011-06-12 18:06:03) [GET]
+  Parameters: {"slug"=>"season-4-episode-16-duffless"}
+  [4;35;1mEpisode Load (4.2ms)[0m   [0mSELECT * FROM "episodes" WHERE (cached_slug LIKE 'season-4-episode-16-duffless%') LIMIT 1[0m
+  [4;36;1mContribution Load (0.7ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 77 AND "contributions"."contribution_type" = 'director') [0m
+  [4;35;1mContributor Load (0.2ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 360) [0m
+  [4;36;1mContribution Load (0.4ms)[0m   [0;1mSELECT * FROM "contributions" WHERE ("contributions"."episode_id" = 77 AND "contributions"."contribution_type" = 'writer') [0m
+  [4;35;1mContributor Load (0.1ms)[0m   [0mSELECT * FROM "contributors" WHERE ("contributors"."id" = 294) [0m
+  [4;36;1mEpisode Load (1.2ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 78) [0m
+  [4;35;1mEpisode Load (0.4ms)[0m   [0mSELECT * FROM "episodes" WHERE ("episodes"."id" = 76) [0m
+  [4;36;1mEpisode Load (0.3ms)[0m   [0;1mSELECT * FROM "episodes" WHERE ("episodes"."id" = 198) [0m
+Rendering template within layouts/application
+Rendering episodes/show
+  [4;35;1mSeason Load (0.2ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "seasons" WHERE ("seasons"."id" = 4) [0m
+Rendered home/_season_links (9.4ms)
+Completed in 159ms (View: 26, DB: 8) | 200 OK [http://localhost/watch-video/season-4-episode-16-duffless]
