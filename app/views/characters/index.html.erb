@@ -1,18 +1,24 @@
-<h1>Listing characters</h1>
+ <% if @characters.nil? %>
+    <h2>No Episodes Found</h2>
+<% else %>
+    <ul id="character_list">
+    <% @characters.each do |character| %>
+        <li class="character yellow-box">
+            <a href="<%= character_url :slug => character %>"
+               title="<%= character.name %>">
+                <div class="character-name">
+                    <h3><%= character.name %></h3>
+                </div>
 
-<table>
-  <tr>
-  </tr>
+                <img src="<%= character.image %>" class="character-thumbnail" />
+            </a>
+        </li>
+    <% end %>
+    </ul>
 
-<% @characters.each do |character| %>
-  <tr>
-    <td><%= link_to 'Show', character %></td>
-    <td><%= link_to 'Edit', edit_character_path(character) %></td>
-    <td><%= link_to 'Destroy', character, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
 <% end %>
-</table>
 
-<br />
-
-<%= link_to 'New character', new_character_path %>
+<% content_for :header do %>*Simpsons Characters<% end %>
+<% content_for :page_title do %>List of Simpsons Characters<% end %>
+<% content_for :meta_description do %><% end %>
+<% content_for :meta_keywords do %><% end %>

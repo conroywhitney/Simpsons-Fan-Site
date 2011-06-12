@@ -15,7 +15,7 @@ html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; width:900px; margin:0px auto; }
 #content { padding-bottom:2em; padding-top:3em; }
 
-li.episode {
+li.episode, li.character {
     display:block;
     text-align:center;
     float:left;
@@ -26,11 +26,7 @@ li.episode {
     padding:4px;
 }
 
-li.episode:hover {
-    background:#FFF;
-}
-
-li.episode a {
+li.episode a, li.character a {
     display:block;
     width:200px;
     height:200px;
@@ -46,6 +42,10 @@ li.episode img {
     width:175px;
     height:128px;
     box-shadow:rgba(0,0,0,0.5) 0px 0px 12px;
+}
+
+li.character img {
+    height:150px;
 }
 
 #embedded_video, #character_image {
@@ -110,7 +110,7 @@ img#simpsons-characters {
     width:850px;
 }
 
-ul#season-episodes {
+ul#season-episodes, #character_list {
     margin:5px auto;
     width:875px;
     padding:5px;
@@ -187,10 +187,17 @@ h2 {
     -webkit-gradient(linear, 0% 0%, 0% 50%, from(#FFD90F), to(#FFFFFF));
     border-radius:12px;
 }
-.white-box {
-    box-shadow:rgba(0,0,0,0.5) 0px 0px 24px;
-    -webkit-gradient(linear, 0% 0%, 0% 50%, from(#FFD90F), to(#FFFFFF));
+.white-box,
+#embedded_video:hover,
+a.white-hover:hover,
+li.episode:hover,
+li.character:hover,
+#btn_prev:hover,
+#btn_next:hover,
+#btn_random:hover {
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.5);
     border-radius:12px;
+    background:#FFF;
 }
 #episode_summary, #character_description {
     width:475px;
@@ -201,7 +208,7 @@ h2 {
     padding:5px;
 }
 
-.episode-title {
+.episode-title, .character-name {
     height:56px;
     overflow:hidden;
     margin:5px 0px;
@@ -243,7 +250,7 @@ h2 {
     text-decoration:none;
 }
 
-#btn_prev, #btn_next, #like, #random {
+#btn_prev, #btn_next, #like, #btn_random {
     width:200px;
     height:50px;
     margin-top:30px;
@@ -257,7 +264,7 @@ h2 {
     float:right;
 }
 
-#btn_prev a, #btn_next a, #random a {
+#btn_prev a, #btn_next a, #btn_random a {
     display:block;
     width:200px;
     height:50px;
@@ -278,7 +285,7 @@ h2 {
     margin:13px auto;
 }
 
-#random {
+#btn_random {
     float:left;
     margin-left:150px;
 }

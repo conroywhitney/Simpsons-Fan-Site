@@ -24,19 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="simpsons.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simpsons.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="17" selection-start="4803" selection-end="4803" vertical-scroll-proportion="0.46411484">
+            <state line="287" column="11" selection-start="4495" selection-end="4495" vertical-scroll-proportion="16.283018">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/characters/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="80" selection-start="490" selection-end="490" vertical-scroll-proportion="-7.111111">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="276" selection-end="276" vertical-scroll-proportion="-4.740741">
+            <state line="3" column="43" selection-start="109" selection-end="109" vertical-scroll-proportion="0.07350689">
               <folding />
             </state>
           </provider>
@@ -72,7 +81,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="42" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.5555556">
+            <state line="5" column="26" selection-start="153" selection-end="160" vertical-scroll-proportion="-2.9629629">
               <folding />
             </state>
           </provider>
@@ -81,7 +90,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="77" selection-end="91" vertical-scroll-proportion="-2.3703704">
+            <state line="29" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-13.037037">
               <folding />
             </state>
           </provider>
@@ -108,7 +117,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="75" selection-start="1756" selection-end="1756" vertical-scroll-proportion="-32.0">
+            <state line="46" column="65" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-10.555555">
               <folding />
             </state>
           </provider>
@@ -128,22 +137,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/contributors.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110611234807_create_contributors_episodes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110611234643_create_contributors.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612023044_create_contributions.rb" />
         <option value="$PROJECT_DIR$/app/models/episode.rb" />
         <option value="$PROJECT_DIR$/app/models/contributor.rb" />
         <option value="$PROJECT_DIR$/app/models/contributions.rb" />
         <option value="$PROJECT_DIR$/app/models/contribution.rb" />
         <option value="$PROJECT_DIR$/app/controllers/episodes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612065630_create_characters.rb" />
         <option value="$PROJECT_DIR$/app/controllers/characters_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/characters/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/character.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/characters/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
+        <option value="$PROJECT_DIR$/app/views/characters/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1070,20 +1079,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110612023044_create_contributions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="346" selection-end="346" vertical-scroll-proportion="-4.740741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110611234807_create_contributors_episodes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="384" selection-end="384" vertical-scroll-proportion="-4.740741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/contributor.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="-2.9629629">
@@ -1140,30 +1135,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="216" selection-end="216" vertical-scroll-proportion="-3.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="77" selection-end="91" vertical-scroll-proportion="-2.3703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="83" selection-start="860" selection-end="860" vertical-scroll-proportion="-7.703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="276" selection-end="276" vertical-scroll-proportion="-4.740741">
           <folding />
         </state>
       </provider>
@@ -1175,9 +1149,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="65" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-10.555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/characters/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="80" selection-start="490" selection-end="490" vertical-scroll-proportion="-7.111111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="26" selection-start="153" selection-end="160" vertical-scroll-proportion="-2.9629629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="-13.037037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="17" selection-start="4803" selection-end="4803" vertical-scroll-proportion="0.46411484">
+        <state line="287" column="11" selection-start="4495" selection-end="4495" vertical-scroll-proportion="16.283018">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="43" selection-start="109" selection-end="109" vertical-scroll-proportion="0.07350689">
           <folding />
         </state>
       </provider>
