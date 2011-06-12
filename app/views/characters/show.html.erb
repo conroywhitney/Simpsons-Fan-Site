@@ -1,0 +1,16 @@
+<div id="content_character">
+    <h2><%= @character.name %></h2>
+
+    <div id="character_image" class="yellow-box">
+        <img src="<%= @character.image %>" />
+    </div>
+
+    <div id="character_description" class="yellow-box">
+        <h3><%= @character.description %></h3>
+    </div>
+</div>
+
+<% content_for :header do %>*Simpsons Characters<% end %>
+<% content_for :page_title do %><%= @character.name %> - The Simpsons Characters<% end %>
+<% content_for :meta_description do %><%= @character.description %><% end %>
+<% content_for :meta_keywords do %><% end %>

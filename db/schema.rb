@@ -9,7 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612023044) do
+ActiveRecord::Schema.define(:version => 20110612065630) do
+
+  create_table "characters", :force => true do |t|
+    t.string   "name",        :null => false
+    t.string   "image",       :null => false
+    t.text     "description"
+    t.string   "cached_slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "characters", ["cached_slug"], :name => "index_characters_on_cached_slug", :unique => true
 
   create_table "contributions", :force => true do |t|
     t.integer  "contributor_id",    :null => false

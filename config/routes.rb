@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :characters
+
   map.connect 'privacy-terms', :controller => 'static', :action => 'privacy_terms'
   map.connect 'legal-DMCA', :controller => 'static', :action => 'legal_DMCA'
   map.connect 'about', :controller => 'static', :action => 'about'
@@ -9,6 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   #map.episode 'season/:season/episode/:episode/:title', :controller => 'episodes', :action => 'show', :season => :season, :episode => :episode
   map.episode '/watch-video/:slug', :controller => 'episodes', :action => 'show'
   map.season 'season/:season/episodes', :controller => 'season', :action => 'show', :season => :season
+  map.character '/characters/:slug', :controller => 'characters', :action => 'show'
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
