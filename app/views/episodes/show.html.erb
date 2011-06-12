@@ -37,6 +37,28 @@
     </div>
     <% end %>
 
+    <div class="clearfix"></div>
+
+    <div id="episode_info" class="yellow-box">
+        <div id="directors" class="contributors">
+            <h4>Directors</h4>
+            <ul>
+            <% @directors.each do |director| %>
+                <li><%= director.name %></li>
+            <% end %>
+            </ul>
+        </div>
+
+        <div id="writers" class="contributors">
+            <h4>Writers</h4>
+            <ul>
+            <% @writers.each do |writer| %>
+                <li><%= writer.name %></li>
+            <% end %>
+            </ul>
+        </div>
+    </div><!-- /episode_info -->
+
 </div>
 
 <% content_for :head_og do %>

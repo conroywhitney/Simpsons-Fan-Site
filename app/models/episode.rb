@@ -1,4 +1,7 @@
 class Episode < ActiveRecord::Base
+    has_many :contributions
+    has_many :contributors, :through => :contributions
+
     ajaxful_rateable :stars => 3
     has_friendly_id :episode_slug,
                     :use_slug => true,

@@ -283,6 +283,27 @@ h2 {
     margin-left:150px;
 }
 
+.contributors {
+    float:left;
+    margin:10px;
+    width:175px;
+    text-align:left;
+    padding:5px;
+}
+
+.contributors ul {
+    padding:0px;
+    padding-left:15px;
+}
+
+#episode_info {
+    width:900px;
+    /*height:200px;*/
+    margin-top:30px;
+    float:left;
+    padding:10px;
+}
+
 /*
 * ---------------------------------------------------------------------------------
 * Ajaxful-Rating

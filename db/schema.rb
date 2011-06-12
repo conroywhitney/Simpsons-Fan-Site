@@ -9,7 +9,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110610215229) do
+ActiveRecord::Schema.define(:version => 20110612023044) do
+
+  create_table "contributions", :force => true do |t|
+    t.integer  "contributor_id",    :null => false
+    t.integer  "episode_id",        :null => false
+    t.string   "contribution_type", :null => false
+    t.integer  "season",            :null => false
+    t.integer  "episode",           :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contributors", :force => true do |t|
+    t.string   "name",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "contributors_episodes", :force => true do |t|
+    t.integer  "contributor_id",    :null => false
+    t.integer  "episode_id",        :null => false
+    t.string   "contribution_type", :null => false
+    t.integer  "season",            :null => false
+    t.integer  "episode",           :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "episode_views", :force => true do |t|
     t.integer  "episode_id", :null => false

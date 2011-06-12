@@ -16,6 +16,9 @@ class EpisodesController < ApplicationController
             :order => "id DESC") : nil
     @last_watched = last_viewing ? last_viewing.friendly_timespan : "Never"
 
+    @directors = Contribution.find_directors(@episode)
+    @writers = Contribution.find_writers(@episode)
+
     @next_episode = Episode.find_next(@episode)
     @previous_episode = Episode.find_previous(@episode)
     @random_episode = Episode.find_random(@episode)
