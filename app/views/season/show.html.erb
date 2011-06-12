@@ -1,26 +1,22 @@
-<% if @episodes.nil? %>
-    <h2>No Episodes Found</h2>
-<% else %>
-    <ul id="season-episodes">
-    <% @episodes.each do |episode| %>
-        <li class="episode yellow-box">
-            <a href="<%= episode_url :slug => episode %>"
-               title="<%= episode.summary %>">
-                <div class="episode-title">
-                    <h3><%= episode.title %></h3>
-                </div>
+<ul id="season-episodes">
+<% @episodes.each do |episode| %>
+    <li class="episode yellow-box">
+        <a href="<%= episode_url :slug => episode %>"
+           title="<%= episode.summary %>">
+            <div class="episode-title">
+                <h3><%= episode.title %></h3>
+            </div>
 
-                <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
+            <img src="<%= episode.thumbnail %>" class="episode-thumbnail" />
 
-                <div class="season-label"><%= episode.season_label %></div>
-            </a>
-        </li>
-    <% end %>
-    </ul>
-
+            <div class="season-label"><%= episode.season_label %></div>
+        </a>
+    </li>
 <% end %>
+</ul>
 
-<% content_for :header do %>*Simpsons - Season <%= @season %><% end %>
-<% content_for :page_title do %>The Simpsons - Season <%= @season %> - Watch Online Free<% end %>
+<% content_for :header do %>Season <%= @season %> Episodes<% end %>
+<% content_for :subheader do %>The Simpsons - Seasons<% end %>
+<% content_for :page_title do %>The Simpsons Season <%= @season %> Episodes - Simpson Seasons<% end %>
 <% content_for :meta_description do %>Watch Simpsons episodes from Season <%= @season %> online for free.<% end %>
 <% content_for :meta_keywords do %>simpsons season <%= @season %>, simpsons season <%= @season %> episodes<% end %>

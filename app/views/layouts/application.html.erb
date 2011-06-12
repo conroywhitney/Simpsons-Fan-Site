@@ -26,12 +26,12 @@
 <div id="header">
     <%= render :partial => "home/season_links" %>
 
-    <h1><%= yield :header %></h1>
     <h2><%= yield :subheader %></h2>
 </div>
 
 <div id="container">
     <div id="content">
+        <h1><%= yield :header %></h1>
 
         <!-- Flash Notice -->
         <div id="flash_notice"><%= notice %></div>

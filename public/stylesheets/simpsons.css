@@ -121,16 +121,16 @@ div.clearfix {
     clear:both;
 }
 
-h1 {
+h2 {
     font-size:24pt;
     margin:5px 5px 5px 5px;
-    letter-spacing:3px;
+    letter-spacing:2px;
 }
 
-h2 {
+h1 {
     font-size:32pt;
     margin:22px 5px 20px 5px;
-    letter-spacing:3px;
+    letter-spacing:2px;
 }
 
 #episode_content h3, #character_description h3 {

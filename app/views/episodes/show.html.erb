@@ -1,7 +1,5 @@
 <div id="episode_content">
 
-    <h2><%= @episode.title %></h2>
-
     <div id="embedded_video" class="yellow-box">
         <a id="video_link" href="<%= @episode.source %>" target="_blank">
             <img id="video_thumb" src="<%= @episode.thumbnail %>" />
@@ -71,8 +69,9 @@
     <meta property="og:description" content="<%= @episode.summary %>" />
 <% end %>
 
-<% content_for :header do %>*Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %><% end %>
-<% content_for :page_title do %>The Simpsons - Season <%= @episode.season %>, Episode <%= @episode.episode %> - "<%= @episode.title %>"<% end %>
+<% content_for :header do %><%= @episode.title %><% end %>
+<% content_for :subheader do %>The Simpsons - Season <%= @episode.season %> - Episode <%= @episode.episode %><% end %>
+<% content_for :page_title do %>Watch Simpsons Videos - <%= @episode.title %> (<%= @episode.season_label_short%>) - Simpson Episodes<% end %>
 <% content_for :meta_description do %><%= @episode.summary %><% end %>
 <% content_for :meta_keywords do %>simpsons <%= @episode.season %>, simpsons season <%= @episode.season %> episode <%= @episode.episode %><% end %>
 
