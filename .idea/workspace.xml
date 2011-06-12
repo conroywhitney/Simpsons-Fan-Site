@@ -36,16 +36,16 @@
       <file leaf-file-name="legal_DMCA.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="3551" selection-end="3551" vertical-scroll-proportion="4.259259">
+            <state line="24" column="47" selection-start="3714" selection-end="3714" vertical-scroll-proportion="-3.1320755">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="privacy_terms.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="privacy_terms.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="124" selection-start="6186" selection-end="6186" vertical-scroll-proportion="18.962963">
+            <state line="25" column="269" selection-start="5853" selection-end="5853" vertical-scroll-proportion="0.46411484">
               <folding />
             </state>
           </provider>
@@ -78,6 +78,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="111" selection-start="111" selection-end="111" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/season/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simpsons.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="simpsons.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="18" selection-start="3949" selection-end="3949" vertical-scroll-proportion="0.84119105">
+            <state line="244" column="18" selection-start="3949" selection-end="3949" vertical-scroll-proportion="-6.3962264">
               <folding />
             </state>
           </provider>
@@ -191,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20110612200925_episodes_remove_season.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_add_season_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200714_episode_rename_season_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110612200303_create_seasons.rb" />
@@ -203,10 +211,11 @@
         <option value="$PROJECT_DIR$/app/models/season.rb" />
         <option value="$PROJECT_DIR$/app/views/season/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/episodes/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static/privacy_terms.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/simpsons.css" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb" />
       </list>
     </option>
   </component>
@@ -1078,7 +1087,7 @@
     <frame x="0" y="22" width="1277" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1129,13 +1138,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110612200303_create_seasons.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="160" selection-end="160" vertical-scroll-proportion="-2.3703704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="28" selection-start="702" selection-end="702" vertical-scroll-proportion="-7.111111">
@@ -1160,13 +1162,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="102" selection-start="181" selection-end="181" vertical-scroll-proportion="-1.1851852">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/_season_links.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="125" selection-start="413" selection-end="413" vertical-scroll-proportion="-2.9629629">
           <folding />
         </state>
       </provider>
@@ -1206,27 +1201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="88" selection-start="1472" selection-end="1472" vertical-scroll-proportion="-0.6603774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="3551" selection-end="3551" vertical-scroll-proportion="4.259259">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="124" selection-start="6186" selection-end="6186" vertical-scroll-proportion="18.962963">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="111" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-8.296296">
@@ -1236,7 +1210,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/simpsons.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="18" selection-start="3949" selection-end="3949" vertical-scroll-proportion="0.84119105">
+        <state line="244" column="18" selection-start="3949" selection-end="3949" vertical-scroll-proportion="-6.3962264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/episodes/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="88" selection-start="1472" selection-end="1472" vertical-scroll-proportion="-0.6603774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/_season_links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="125" selection-start="413" selection-end="413" vertical-scroll-proportion="-2.9629629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="111" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/legal_DMCA.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="3714" selection-end="3714" vertical-scroll-proportion="-3.1320755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/privacy_terms.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="269" selection-start="5853" selection-end="5853" vertical-scroll-proportion="0.46411484">
           <folding />
         </state>
       </provider>
