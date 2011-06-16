@@ -1,1 +1,6 @@
 /config/initializers/site_keys.rb
+/misc
+/config/database.yml
+/log
+/tmp
+/.idea
