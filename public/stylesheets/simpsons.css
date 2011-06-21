@@ -51,7 +51,7 @@ li.character img {
 #embedded_video, #character_image {
     float:left;
     width:400px;
-    margin:0px;
+    margin:15px 0px 0px;
 }
 
 ul#season_links {
@@ -108,6 +108,7 @@ div#content {
 
 img#simpsons-characters {
     width:850px;
+    margin:-20px 0px;
 }
 
 ul#season-episodes, #character_list {
@@ -122,14 +123,14 @@ div.clearfix {
 }
 
 h2 {
-    font-size:24pt;
+    font-size:18pt;
     margin:5px 5px 5px 5px;
     letter-spacing:2px;
 }
 
 h1 {
-    font-size:32pt;
-    margin:22px 5px 20px 5px;
+    font-size:24pt;
+    margin:10px 5px 0px;
     letter-spacing:2px;
 }
 
@@ -206,6 +207,7 @@ li.character:hover,
     overflow-y: auto;
     overflow-x: hidden;
     padding:5px;
+    margin:15px 0px 0px;
 }
 
 .episode-title, .character-name {
