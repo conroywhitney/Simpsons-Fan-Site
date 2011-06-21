@@ -73,5 +73,5 @@ PLATFORMS
 DEPENDENCIES
   ajaxful_rating (~> 2.2.8.2)
   friendly_id (~> 3.2.1)
-  omniauth
+  omniauth (~> 0.2.6)
   rack-rewrite (~> 1.0.2)
