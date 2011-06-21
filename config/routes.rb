@@ -23,6 +23,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :episodes, :member => {:rate => :post}
 
+  map.connect '/auth/:provider/callback', :controller => 'sessions', :action => 'oauth'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

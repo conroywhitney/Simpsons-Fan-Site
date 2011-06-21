@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612200714) do
+ActiveRecord::Schema.define(:version => 20110621044106) do
+
+  create_table "authorizations", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "characters", :force => true do |t|
     t.string   "name",        :null => false
@@ -88,6 +96,7 @@ ActiveRecord::Schema.define(:version => 20110612200714) do
     t.integer  "number"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_slug"
   end
 
   create_table "slugs", :force => true do |t|

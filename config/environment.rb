@@ -38,11 +38,19 @@ Rails::Initializer.run do |config|
   config.gem "ajaxful_rating", :version => "~> 2.2.8.2"
   config.gem "friendly_id", :version => "~> 3.2.1"
   config.gem 'rack-rewrite', :version => '~> 1.0.2'
+  config.gem 'omniauth'
+
+  require 'omniauth'
 
   require 'rack-rewrite'
   config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
     # remove trailing slashes from URLs so that only one version exists
     r301 %r{^/(.*)/$}, '/$1'
+  end
+
+  config.middleware.use OmniAuth::Builder do
+    provider :twitter, 'QQbBTEdXrf7eDsWr67Q', '0KvZMLCzOHIRA5GidfJLEqkDPFpTxQHE2iE0bJFrys'
+    provider :facebook, '103144423110785', '4ed86e450bc631ea2236c6df08e17962'
   end
 
   # 301 URLs starting with www to the non-www (preferred) ULR
