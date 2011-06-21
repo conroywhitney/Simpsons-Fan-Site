@@ -52,6 +52,7 @@ Rails::Initializer.run do |config|
     provider :facebook, '103144423110785', '4ed86e450bc631ea2236c6df08e17962'
   end
 
+
   # 301 URLs starting with www to the non-www (preferred) ULR
   # this is necessary for SEO so Google does not count www and non-www as two sites!
   config.middleware.use "NoWWW" if RAILS_ENV == 'production'
